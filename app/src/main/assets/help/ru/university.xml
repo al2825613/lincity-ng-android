@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE!! IT WAS GENERATED AUTOMATICALLY! (you must edit files in help_template directory) -->
+<Document style="helpdocument">
+	<p style="htitle">Университет</p>
+	<p style="hp">Помогают повысить уровень технологического развития. Для их функционирования необходимы товары и рабочие. Они повышают технологический уровень сильнее, чем школы, однако тратят на это большие ресурсы и дорого стоят, поэтому их рекомендуется строить при достаточно развитой экономике и промышленности.</p>
+	<p style="hp">Для достижения технологического уровня выше 100% Вам потребуется несколько действующих университетов.</p>
+	<p style="hp">Университеты не нужно соединять с транспортной системы, если они находятся в зоне действия магазина и имеют доступ к необходимому количеству товаров и рабочей силы.</p>
+
+	<p style="hsubtitle">Примечание</p>
+	<p style="hp">Студенты приходят учиться в университеты из школ, поэтому на каждый университет должно приходиться четыре школы.</p>
+
+  <p style="hp">Это университет:</p>
+   <img src="images/tiles/university.png" halign="center"/>
+
+  <p style="hp">а это его иконка:</p>
+   <img src="images/gui/buttonpanel/misc/university.png" halign="center"/>
+
+  <p style="hsubtitle">См. ещё:</p>
+	<li><a href="tech-level">Уровень технологического развития</a></li>
+	<li><a href="market">Магазин</a></li>
+	<li><a href="transport">Транспортная система</a></li>
+	<li><a href="goods">Товары</a></li>
+	<li><a href="labor">Рабочие</a></li>
+	<li><a href="school">Школа</a></li>
+</Document>

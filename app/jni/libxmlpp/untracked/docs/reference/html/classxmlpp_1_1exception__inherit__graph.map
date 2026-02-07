@@ -1,0 +1,7 @@
+<map id="xmlpp::exception" name="xmlpp::exception">
+<area shape="rect" id="node1" title="Base class for all xmlpp exceptions." alt="" coords="105,80,240,107"/>
+<area shape="rect" id="node3" href="$classxmlpp_1_1internal__error.html" title=" " alt="" coords="5,155,164,181"/>
+<area shape="rect" id="node4" href="$classxmlpp_1_1parse__error.html" title="This exception will be thrown when the parser encounters an error in the XML document." alt="" coords="188,155,333,181"/>
+<area shape="rect" id="node2" href="/opt/gnome/share/mm-common/doctags/libstdc++.tag$a05615.html" title=" " alt="" coords="115,5,230,32"/>
+<area shape="rect" id="node5" href="$classxmlpp_1_1validity__error.html" title="This exception will be thrown when the parser encounters a validity error in the XML document." alt="" coords="181,229,340,256"/>
+</map>

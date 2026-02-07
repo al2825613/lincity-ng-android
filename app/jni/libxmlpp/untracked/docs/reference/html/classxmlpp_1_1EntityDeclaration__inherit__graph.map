@@ -1,0 +1,6 @@
+<map id="xmlpp::EntityDeclaration" name="xmlpp::EntityDeclaration">
+<area shape="rect" id="node1" title="Entity declaration." alt="" coords="5,229,189,256"/>
+<area shape="rect" id="node2" href="$classxmlpp_1_1ContentNode.html" title="Content node." alt="" coords="19,155,175,181"/>
+<area shape="rect" id="node3" href="$classxmlpp_1_1Node.html" title="Represents XML Nodes." alt="" coords="45,80,150,107"/>
+<area shape="rect" id="node4" href="$classxmlpp_1_1NonCopyable.html" title="A base for classes which cannot be copied or moved." alt="" coords="18,5,177,32"/>
+</map>

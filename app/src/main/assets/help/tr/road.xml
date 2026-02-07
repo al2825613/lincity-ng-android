@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Document style="helpdocument">
+	<p style="htitle">Yollar</p>
+	<p style="hp">Yollar, tali yollardan daha çok ancak demiryollarından daha az taşımacılık yapar. Demiryollarının sağladığından daha fazla kirliliğe yol açarlar ancak alımları ve bakımları, demiryollarından daha ucuzdur - tercih edilmeleri için bir sebep olmalıydı!</p>
+	
+	<p style="hp">Bu bir Yol</p>
+	<img src="images/tiles/roadud.png" halign="center"/>
+	<p style="hp">ve bu da simgesi</p>
+	<img src="images/gui/buttonpanel/transport/road.png" halign="center"/>
+	
+	<p style="hsubtitle">Ayrıca bakınız:</p>
+	<li><a href="transport">Ulaşım</a></li>
+	<li><a href="commune">Komün</a></li>
+	<li><a href="pollution">Kirlilik</a></li>
+</Document>

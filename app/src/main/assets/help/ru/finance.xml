@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE!! IT WAS GENERATED AUTOMATICALLY! (you must edit files in help_template directory) -->
+<Document style="helpdocument">
+	<p style="htitle">Окно финансов</p>
+	<p style="hp">Левое нажатие на этом окне открывает окна с 'глобальным финансовым балансом', ещё одно нажатие открывает 'другие затраты' и ещё одно нажатие открывает 'затраты населения'.</p>
+	<p style="hp">Финансовое окно обновляется каждый год 1-ого января. Данные отражают приход и траты за прошедший год.</p>
+	<p style="hp">'Итог' -- это ваш баланс. Некоторые вещи Вы не сможете делать, находясь 'в красном'.</p>
+
+  <p style="hsubtitle">См. ещё:</p>
+	<li><a href="housing">Окно населения</a></li>
+	<li><a href="other-costs">Другие затраты</a></li>
+</Document>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document style="helpdocument">
+<p style="htitle">İlk adımlar </p>
+<p style="hp">"Yeni oyun"u ve "Rastgele köy"ü seçin. Diğer senaryolar daha çok veya daha az gelişmiş oyuncular içindir. </p>
+<p style="hp">Rastgele köy basit yetenekler içerir: </p>
+<li>Bakkallara yiyecek sağlayan Çiftlikler </li>
+<li>Odun kömürü ve küçük bir miktar mineral ve çelik sağlayan Komünler. </li>
+<li>Yerleşim alanları</li>
+<li>Çömlekçilik</li>
+<li>Tali yollar</li>
+
+<p style="hp">Ana ekranda bir yapının üzerine tıklamak, o yapının bilgisini daha aşağıda, sağda bulunan pencerede görüntüler.</p>
+
+<p style="hsubtitle">Bakkal </p>
+<p style="hp">Bakkal Lincity'de anahtar bir yapıdır. Hemen hemen tüm yerel ticaret için gereklidir. <a href="market"> Bakkal </a> yardımını <b> okumalısınız</b> :-). <i> Şüphesiz ki bir Bakkal boş olduğunda uygun olan ürünleri satamayacak ve tam dolu olduğunda da satın alamayacaktır. Bu, bazı yapıların neden çalışmadığını anlamanıza yardımcı olabilir (muhtemelen ihtiyaçlarını bulamayacak veya ürettiklerini satamayacaklar)</i>.</p>
+
+<p style="hsubtitle">Ulaşım </p>
+<p style="hp"><a href="transport">Ulaşım </a> uzun mesafeli takaslarda ve bazı belirli işler için ihtiyaçtır (örneğin komünler gibi ilgili yardım sayfasında yazılmıştır). Örn.: Sınırlı hacimleri olan ve doyumluğa ulaşma sınırları olan Bakkallar gibi.</p>
+
+<p style="hp">Eğer 'normal' bir yapı, bir Bakkalın kapsama alanında değilse; ulaşıma bağlanmış olmalıdır. Fakat şunu göz önünde bulundurun: Yolların ve Demiryollarının yıllık masrafları olduğundan, gerçekten bir yapıyı yalıtmak istemedikçe (örn. bir anıt), ihtiyaç olduğunda Bakkalların kullanılması genelde daha iyi ve daha ucuzdur. </p>
+
+<p style="hp">Başlangıçtaki köye tali yollar gerekli değildir, fakat köy geliştikçe ihtiyaç duyulacaktır. </p>
+
+<p style="hsubtitle">Para </p>
+<p style="hp">Üretimler vergilendirilir ve böylece para kazanırsınız. Küçük ekrandaki üçüncü sekme <a href="finance"> Parasal ekran</a>dır. Çok hızlı, yüksek miktarda yatırım yapmamaya dikkat edin: paranız eksiye düşerse yeni bir şeyler yapamazsınız ve borç için her yıl ödemeniz gereken bir miktar olur. Bu da iflasınıza yol açabilir. <a href="tutorial-scenario"> Zor zamanlar senaryosuna </a> bakın. </p>
+
+<p style="hsubtitle">Şehri geliştirmek </p>
+<p style="hp">Hatırlayın; insanlar beslenir veya ölür. Nüfus artışını kontrol etmek için, yaptığınız <a href="residential"> Yerleşim alanı </a> çeşitlerinde bir denge bulmak zorundasınız (farklı doğum/ölüm oranları bulunmaktadır). Yeni nüfus daha fazla işçi sağlayacak, fakat daha fazla yiyecek eşya ve işe de ihtiyaçları olacak...</p>
+<p style="hp">Üretimleri arttırmak zorunda olacaksınız (çömlekçi veya demirci ekleyin). Aynı zamanda ihtiyacı oldukları kaynaklara da dikkat etmelisiniz. Yani uyumlu olarak Komünlere de ihtiyacınız olacak. </p>
+<p style="hp">Yeni yapılar edinmek için <a href="tech-level"> Teknoloji seviyenizi </a> arttırmalısınız.</p>
+<p style="hp"> Bazı noktalarda bir amaç seçmek zorunda olacaksınız: <a href="sustain"> Sürdürülebilir bir ekonomi mi </a> yoksa <a href="rocket"> uzaygemileri </a> mi?</p>
+
+<p style="hp">Çok sık bir şekilde <a href="pbar"> toplam bakkal birikimini </a> denetlemek zorunda olacaksınız. Küçük haritalar ekonominin iç yüzüdür ve tam olarak gözden geçirmeniz size daha fazla bilgi verecektir. Ana ekranda bir yapının üzerine tıklamanın sağ alt köşedeki pencerede bilgisini görüntülediğini hatırlayın. </p>
+
+<li>İpucu: Bir iki değişiklik yaptığınızda biraz bekleyin (yardım dosyalarını okuyun ;-)) veya oyunu daha yüksek bir hıza alıp ekonomik göstergelerin nasıl değiştiğini izleyin. </li>
+<p style="hp"></p>
+<p style="hp">İyi eğlenceler.</p>
+<p style="hp"></p>
+
+<p style="hp">Ayrıca bakınız:</p>
+<li><a href="tutorial-advanced">Gelişmiş özellikli eğitmen</a></li>
+<li><a href="tutorial-scenario">Önceden tanımlanmış senaryolar</a></li>
+<li><a href="msb-starve">Açlık örtüsü</a></li>
+<li><a href="msb-ub40">İşsizlik örtüsü</a></li>
+
+
+</Document>
+

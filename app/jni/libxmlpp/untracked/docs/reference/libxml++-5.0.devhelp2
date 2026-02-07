@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<book xmlns="http://www.devhelp.net/book" title="libxml++ Reference Manual" name="libxml++-5.0" base="html" link="index.html" version="2" language="c++">
+  <chapters>
+    <sub name="Namespaces" link="namespaces.html">
+      <sub name="xmlpp" link="namespacexmlpp.html"/>
+    </sub>
+    <sub name="Classes" link="classes.html">
+      <sub name="hash_load_check_resize_trigger_size_base" link="classhash__load__check__resize__trigger__size__base.html"/>
+      <sub name="lu_counter_policy_base" link="classlu__counter__policy__base.html"/>
+      <sub name="mask_based_range_hashing" link="classmask__based__range__hashing.html"/>
+      <sub name="mod_based_range_hashing" link="classmod__based__range__hashing.html"/>
+      <sub name="xmlpp" link="namespacexmlpp.html">
+        <sub name="Attribute" link="classxmlpp_1_1Attribute.html"/>
+        <sub name="AttributeDeclaration" link="classxmlpp_1_1AttributeDeclaration.html"/>
+        <sub name="AttributeNode" link="classxmlpp_1_1AttributeNode.html"/>
+        <sub name="CdataNode" link="classxmlpp_1_1CdataNode.html"/>
+        <sub name="CommentNode" link="classxmlpp_1_1CommentNode.html"/>
+        <sub name="ContentNode" link="classxmlpp_1_1ContentNode.html"/>
+        <sub name="Document" link="classxmlpp_1_1Document.html"/>
+        <sub name="DomParser" link="classxmlpp_1_1DomParser.html"/>
+        <sub name="Dtd" link="classxmlpp_1_1Dtd.html"/>
+        <sub name="DtdValidator" link="classxmlpp_1_1DtdValidator.html"/>
+        <sub name="Element" link="classxmlpp_1_1Element.html"/>
+        <sub name="EntityDeclaration" link="classxmlpp_1_1EntityDeclaration.html"/>
+        <sub name="EntityReference" link="classxmlpp_1_1EntityReference.html"/>
+        <sub name="exception" link="classxmlpp_1_1exception.html"/>
+        <sub name="internal_error" link="classxmlpp_1_1internal__error.html"/>
+        <sub name="IStreamParserInputBuffer" link="classxmlpp_1_1IStreamParserInputBuffer.html"/>
+        <sub name="KeepBlanks" link="classxmlpp_1_1KeepBlanks.html"/>
+        <sub name="Node" link="classxmlpp_1_1Node.html"/>
+        <sub name="NonCopyable" link="classxmlpp_1_1NonCopyable.html"/>
+        <sub name="OStreamOutputBuffer" link="classxmlpp_1_1OStreamOutputBuffer.html"/>
+        <sub name="OutputBuffer" link="classxmlpp_1_1OutputBuffer.html"/>
+        <sub name="parse_error" link="classxmlpp_1_1parse__error.html"/>
+        <sub name="Parser" link="classxmlpp_1_1Parser.html"/>
+        <sub name="ParserInputBuffer" link="classxmlpp_1_1ParserInputBuffer.html"/>
+        <sub name="ProcessingInstructionNode" link="classxmlpp_1_1ProcessingInstructionNode.html"/>
+        <sub name="RelaxNGSchema" link="classxmlpp_1_1RelaxNGSchema.html"/>
+        <sub name="RelaxNGValidator" link="classxmlpp_1_1RelaxNGValidator.html"/>
+        <sub name="SaxParser" link="classxmlpp_1_1SaxParser.html">
+          <sub name="Attribute" link="structxmlpp_1_1SaxParser_1_1Attribute.html"/>
+          <sub name="AttributeHasName" link="structxmlpp_1_1SaxParser_1_1AttributeHasName.html"/>
+        </sub>
+        <sub name="SchemaBase" link="classxmlpp_1_1SchemaBase.html"/>
+        <sub name="SchemaValidatorBase" link="classxmlpp_1_1SchemaValidatorBase.html"/>
+        <sub name="TextNode" link="classxmlpp_1_1TextNode.html"/>
+        <sub name="TextReader" link="classxmlpp_1_1TextReader.html"/>
+        <sub name="Validator" link="classxmlpp_1_1Validator.html"/>
+        <sub name="validity_error" link="classxmlpp_1_1validity__error.html"/>
+        <sub name="XIncludeEnd" link="classxmlpp_1_1XIncludeEnd.html"/>
+        <sub name="XIncludeStart" link="classxmlpp_1_1XIncludeStart.html"/>
+        <sub name="XsdSchema" link="classxmlpp_1_1XsdSchema.html"/>
+        <sub name="XsdValidator" link="classxmlpp_1_1XsdValidator.html"/>
+      </sub>
+    </sub>
+  </chapters>
+  <functions>
+    <keyword type="struct" name="hash_load_check_resize_trigger_size_base" link="classhash__load__check__resize__trigger__size__base.html"/>
+    <keyword type="struct" name="lu_counter_policy_base" link="classlu__counter__policy__base.html"/>
+    <keyword type="struct" name="mask_based_range_hashing" link="classmask__based__range__hashing.html"/>
+    <keyword type="struct" name="mod_based_range_hashing" link="classmod__based__range__hashing.html"/>
+    <keyword type="struct" name="xmlpp::Attribute" link="classxmlpp_1_1Attribute.html"/>
+    <keyword name="xmlpp::Attribute::Attribute" link="classxmlpp_1_1Attribute.html#a1aa5294ec06fa7d5c1198e2c47d5838c" type="function"/>
+    <keyword name="xmlpp::Attribute::~Attribute" link="classxmlpp_1_1Attribute.html#ab4fb700036336d55b7ef5139b6a41e01" type="function"/>
+    <keyword name="xmlpp::Attribute::get_value" link="classxmlpp_1_1Attribute.html#a8ce7ba9d18403627be37a21b7ab2763f" type="function"/>
+    <keyword type="struct" name="xmlpp::AttributeDeclaration" link="classxmlpp_1_1AttributeDeclaration.html"/>
+    <keyword name="xmlpp::AttributeDeclaration::AttributeDeclaration" link="classxmlpp_1_1AttributeDeclaration.html#a6d7dd6ccbe4ad325ccb053a252b10c9c" type="function"/>
+    <keyword name="xmlpp::AttributeDeclaration::~AttributeDeclaration" link="classxmlpp_1_1AttributeDeclaration.html#a9a6b8bbfda313c17a136a658afaae30c" type="function"/>
+    <keyword name="xmlpp::AttributeDeclaration::cobj" link="classxmlpp_1_1AttributeDeclaration.html#adc3df885af149c2f61a5f52ee19d3df5" type="function"/>
+    <keyword name="xmlpp::AttributeDeclaration::cobj" link="classxmlpp_1_1AttributeDeclaration.html#aecb8014f7d55281a1d0084bdfee21746" type="function"/>
+    <keyword name="xmlpp::AttributeDeclaration::get_value" link="classxmlpp_1_1AttributeDeclaration.html#ab924f2224c40b2748e4ea0923c48195b" type="function"/>
+    <keyword type="struct" name="xmlpp::AttributeNode" link="classxmlpp_1_1AttributeNode.html"/>
+    <keyword name="xmlpp::AttributeNode::AttributeNode" link="classxmlpp_1_1AttributeNode.html#a0af899521d66b09398deb5fa7fd26035" type="function"/>
+    <keyword name="xmlpp::AttributeNode::~AttributeNode" link="classxmlpp_1_1AttributeNode.html#a5d6a1a1875bf2118758f2d160a5bc999" type="function"/>
+    <keyword name="xmlpp::AttributeNode::cobj" link="classxmlpp_1_1AttributeNode.html#ac4a2abc9abe36b5401c5bb52ed5f200c" type="function"/>
+    <keyword name="xmlpp::AttributeNode::cobj" link="classxmlpp_1_1AttributeNode.html#aa42fac691f6de19f45f0235375571a00" type="function"/>
+    <keyword name="xmlpp::AttributeNode::get_value" link="classxmlpp_1_1AttributeNode.html#a5216c61266672452e9090eab631036f7" type="function"/>
+    <keyword name="xmlpp::AttributeNode::set_value" link="classxmlpp_1_1AttributeNode.html#a98872d2061bc9c885bb69c1f77a95a8c" type="function"/>
+    <keyword type="struct" name="xmlpp::CdataNode" link="classxmlpp_1_1CdataNode.html"/>
+    <keyword name="xmlpp::CdataNode::CdataNode" link="classxmlpp_1_1CdataNode.html#a150933b23cfa1a5c0fc5fffd433e7194" type="function"/>
+    <keyword name="xmlpp::CdataNode::~CdataNode" link="classxmlpp_1_1CdataNode.html#a0b8765ad1a587639a785291691404b74" type="function"/>
+    <keyword type="struct" name="xmlpp::CommentNode" link="classxmlpp_1_1CommentNode.html"/>
+    <keyword name="xmlpp::CommentNode::CommentNode" link="classxmlpp_1_1CommentNode.html#a3be1e492187b87279acc1aff82c77dc2" type="function"/>
+    <keyword name="xmlpp::CommentNode::~CommentNode" link="classxmlpp_1_1CommentNode.html#a1621c4bec0d757677f0b103dc00d1a7f" type="function"/>
+    <keyword type="struct" name="xmlpp::ContentNode" link="classxmlpp_1_1ContentNode.html"/>
+    <keyword name="xmlpp::ContentNode::ContentNode" link="classxmlpp_1_1ContentNode.html#af9fcf3459cdc338ffe51c09006487c3e" type="function"/>
+    <keyword name="xmlpp::ContentNode::~ContentNode" link="classxmlpp_1_1ContentNode.html#a5b4f7221465b67714a5fa66e6abd6180" type="function"/>
+    <keyword name="xmlpp::ContentNode::get_content" link="classxmlpp_1_1ContentNode.html#ac9580342b6362a4a791d6b54f74605cc" type="function"/>
+    <keyword name="xmlpp::ContentNode::is_white_space" link="classxmlpp_1_1ContentNode.html#ad4cd129e8edda366d202b5c6d3e3e2ad" type="function"/>
+    <keyword name="xmlpp::ContentNode::set_content" link="classxmlpp_1_1ContentNode.html#aa131bfc63bd9f482fcf07748991fe449" type="function"/>
+    <keyword type="struct" name="xmlpp::Document" link="classxmlpp_1_1Document.html"/>
+    <keyword name="xmlpp::Document::Document" link="classxmlpp_1_1Document.html#ac18dbf6e4c404dac08a0784c553c5e88" type="function"/>
+    <keyword name="xmlpp::Document::Document" link="classxmlpp_1_1Document.html#a2697a1fb97c86da41f91d77a6ca5e6e5" type="function"/>
+    <keyword name="xmlpp::Document::~Document" link="classxmlpp_1_1Document.html#aee0af647f8b997f0ce91c5f8ef26d6f5" type="function"/>
+    <keyword name="xmlpp::Document::add_comment" link="classxmlpp_1_1Document.html#ac77bbfbb0ac95ec39195605cd9663880" type="function"/>
+    <keyword name="xmlpp::Document::add_processing_instruction" link="classxmlpp_1_1Document.html#a7c5b702c109071b785498f5ebe01cafa" type="function"/>
+    <keyword name="xmlpp::Document::cobj" link="classxmlpp_1_1Document.html#ae0798c37361dc30741394c2ba36331b3" type="function"/>
+    <keyword name="xmlpp::Document::cobj" link="classxmlpp_1_1Document.html#a3aea1ed5ec6dc47f45a12290b46b9f8e" type="function"/>
+    <keyword name="xmlpp::Document::create_root_node" link="classxmlpp_1_1Document.html#a2901feff7f6b5a011e5cdb0bbf8a74f4" type="function"/>
+    <keyword name="xmlpp::Document::create_root_node_by_import" link="classxmlpp_1_1Document.html#a8085d5e40537e2a674063cbddb39f0b8" type="function"/>
+    <keyword name="xmlpp::Document::get_encoding" link="classxmlpp_1_1Document.html#ad26878137b624e96849ff10466afc3fc" type="function"/>
+    <keyword name="xmlpp::Document::get_internal_subset" link="classxmlpp_1_1Document.html#aa7213c2edec51f2b80b84dbed8cd4c0c" type="function"/>
+    <keyword name="xmlpp::Document::get_root_node" link="classxmlpp_1_1Document.html#a4a79695bd8889b638dceb7bc5dcb375d" type="function"/>
+    <keyword name="xmlpp::Document::get_root_node" link="classxmlpp_1_1Document.html#a95e6869e2e0875a983886d0bbf8722c4" type="function"/>
+    <keyword name="xmlpp::Document::process_xinclude" link="classxmlpp_1_1Document.html#a977ef6270ce83e987eb7767320f4b561" type="function"/>
+    <keyword name="xmlpp::Document::set_entity_declaration" link="classxmlpp_1_1Document.html#a481e5b42184785a7b862ee252e1df114" type="function"/>
+    <keyword name="xmlpp::Document::set_internal_subset" link="classxmlpp_1_1Document.html#a309ae0fda6b1422dd7b9f9a8ee30a14c" type="function"/>
+    <keyword name="xmlpp::Document::write_to_file" link="classxmlpp_1_1Document.html#a7fa933cf9f8d1578ffc717d86c77d5ad" type="function"/>
+    <keyword name="xmlpp::Document::write_to_file_formatted" link="classxmlpp_1_1Document.html#a635e092bc12ee02754f36e9e3b4b294a" type="function"/>
+    <keyword name="xmlpp::Document::write_to_stream" link="classxmlpp_1_1Document.html#a713b291551d118a9c977e4f45c778e3f" type="function"/>
+    <keyword name="xmlpp::Document::write_to_stream_formatted" link="classxmlpp_1_1Document.html#a9f0088bf4b758ab2df9107f036fe6bc2" type="function"/>
+    <keyword name="xmlpp::Document::write_to_string" link="classxmlpp_1_1Document.html#a2dd3306212cb6e27b17d0c0cff13fa20" type="function"/>
+    <keyword name="xmlpp::Document::write_to_string_formatted" link="classxmlpp_1_1Document.html#a9d97201518c69cfec5074728d5f46804" type="function"/>
+    <keyword name="xmlpp::Document::get_entity" link="classxmlpp_1_1Document.html#ae2bd7c7bc7a758dc0c0d74bc4e87a64d" type="function"/>
+    <keyword name="xmlpp::Document::SaxParser" link="classxmlpp_1_1Document.html#ad804f0de41137fa28564abe53c8d27b1" type="function"/>
+    <keyword type="struct" name="xmlpp::DomParser" link="classxmlpp_1_1DomParser.html"/>
+    <keyword name="xmlpp::DomParser::DomParser" link="classxmlpp_1_1DomParser.html#abeab430d4863459b6d03fc7e97363df5" type="function"/>
+    <keyword name="xmlpp::DomParser::DomParser" link="classxmlpp_1_1DomParser.html#aa88a1d5c79c558a73315ecbea789f5c5" type="function"/>
+    <keyword name="xmlpp::DomParser::~DomParser" link="classxmlpp_1_1DomParser.html#a08d60f330f888eb3e7ad88c8103bf6c5" type="function"/>
+    <keyword name="xmlpp::DomParser::get_document" link="classxmlpp_1_1DomParser.html#a9c1cd8aba79fcc219542656c00ace70f" type="function"/>
+    <keyword name="xmlpp::DomParser::get_document" link="classxmlpp_1_1DomParser.html#ae8c97d0904dcfe9231ddb13670f3bf59" type="function"/>
+    <keyword name="xmlpp::DomParser::get_xinclude_options" link="classxmlpp_1_1DomParser.html#a8c30dc94275e1a1d697ca3f2d725e1a9" type="function"/>
+    <keyword name="xmlpp::DomParser::operator bool" link="classxmlpp_1_1DomParser.html#a13f881d5f1a028148108ef00ead8cb16" type="function"/>
+    <keyword name="xmlpp::DomParser::parse_file" link="classxmlpp_1_1DomParser.html#a78670aedcb243fc805bd2fd1061cd4fc" type="function"/>
+    <keyword name="xmlpp::DomParser::parse_memory" link="classxmlpp_1_1DomParser.html#a22a0d7d7761142163b0310c603db57ab" type="function"/>
+    <keyword name="xmlpp::DomParser::parse_memory_raw" link="classxmlpp_1_1DomParser.html#a1be5fc641bcb2eddd43bfa245ad15793" type="function"/>
+    <keyword name="xmlpp::DomParser::parse_stream" link="classxmlpp_1_1DomParser.html#ad998ea40ff591e2ed357f2d5f12af75e" type="function"/>
+    <keyword name="xmlpp::DomParser::set_xinclude_options" link="classxmlpp_1_1DomParser.html#a12d49a9638e67dab06a22c60ac202c1f" type="function"/>
+    <keyword name="xmlpp::DomParser::check_xinclude_and_finish_parsing" link="classxmlpp_1_1DomParser.html#a6c34564e2c2e400bc48cfcb7b184779c" type="function"/>
+    <keyword name="xmlpp::DomParser::parse_context" link="classxmlpp_1_1DomParser.html#a07b10b612bcc331434d73d68c9df4efb" type="function"/>
+    <keyword name="xmlpp::DomParser::release_underlying" link="classxmlpp_1_1DomParser.html#aaf97f584898f6c0e34af9e0dc8e1d45e" type="function"/>
+    <keyword type="struct" name="xmlpp::Dtd" link="classxmlpp_1_1Dtd.html"/>
+    <keyword name="xmlpp::Dtd::Dtd" link="classxmlpp_1_1Dtd.html#add2e7be5e65be5fcda8e787b408b84e8" type="function"/>
+    <keyword name="xmlpp::Dtd::Dtd" link="classxmlpp_1_1Dtd.html#ae6ad9427bad6ddbc557be142cf24fc52" type="function"/>
+    <keyword name="xmlpp::Dtd::Dtd" link="classxmlpp_1_1Dtd.html#acaba310b4ba26e2ab2a12f135988514a" type="function"/>
+    <keyword name="xmlpp::Dtd::Dtd" link="classxmlpp_1_1Dtd.html#ad232c481dbbd0bcf58f8d63445c77fa7" type="function"/>
+    <keyword name="xmlpp::Dtd::~Dtd" link="classxmlpp_1_1Dtd.html#aade30e1fb445ae8040cfdcaa42396487" type="function"/>
+    <keyword name="xmlpp::Dtd::cobj" link="classxmlpp_1_1Dtd.html#a1b0597bd8eeea299b71447a9a7bdafc7" type="function"/>
+    <keyword name="xmlpp::Dtd::cobj" link="classxmlpp_1_1Dtd.html#a59788005ed9a002c16a0371c136973a6" type="function"/>
+    <keyword name="xmlpp::Dtd::get_external_id" link="classxmlpp_1_1Dtd.html#a654922cbf9b3fbac9182534ed0169c3c" type="function"/>
+    <keyword name="xmlpp::Dtd::get_name" link="classxmlpp_1_1Dtd.html#a8b52d78bb4a09537cd401e194d3b8eed" type="function"/>
+    <keyword name="xmlpp::Dtd::get_system_id" link="classxmlpp_1_1Dtd.html#a57092ecf386fc3dfb86783c32b696d59" type="function"/>
+    <keyword name="xmlpp::Dtd::parse_file" link="classxmlpp_1_1Dtd.html#aea3e6ce3f1a7317e15cd8fe440e67e4b" type="function"/>
+    <keyword name="xmlpp::Dtd::parse_memory" link="classxmlpp_1_1Dtd.html#a7d1020b73e853b2148379998e6670e33" type="function"/>
+    <keyword name="xmlpp::Dtd::parse_stream" link="classxmlpp_1_1Dtd.html#a54fbf47ff4549c14a9e887863a1797ba" type="function"/>
+    <keyword name="xmlpp::Dtd::parse_subset" link="classxmlpp_1_1Dtd.html#a7e1d162a31d8c38f20d43d8728f4d9b3" type="function"/>
+    <keyword name="xmlpp::Dtd::release_underlying" link="classxmlpp_1_1Dtd.html#a323f42291e0bd9e251e96b85be9c5907" type="function"/>
+    <keyword type="struct" name="xmlpp::DtdValidator" link="classxmlpp_1_1DtdValidator.html"/>
+    <keyword name="xmlpp::DtdValidator::DtdValidator" link="classxmlpp_1_1DtdValidator.html#aa14c1fdd08db52e64ec53d7ea19f63e2" type="function"/>
+    <keyword name="xmlpp::DtdValidator::DtdValidator" link="classxmlpp_1_1DtdValidator.html#a1c18d3c459df3b0de6161772788558f7" type="function"/>
+    <keyword name="xmlpp::DtdValidator::DtdValidator" link="classxmlpp_1_1DtdValidator.html#a79b03e40f17f279166a57355972d0333" type="function"/>
+    <keyword name="xmlpp::DtdValidator::DtdValidator" link="classxmlpp_1_1DtdValidator.html#a93294fb97b4a833718d22ab0a9abb90a" type="function"/>
+    <keyword name="xmlpp::DtdValidator::~DtdValidator" link="classxmlpp_1_1DtdValidator.html#a80044e24d793b0acfd0d1bf0c95f8961" type="function"/>
+    <keyword name="xmlpp::DtdValidator::get_dtd" link="classxmlpp_1_1DtdValidator.html#a603a03054e84dff5191b52f535eba106" type="function"/>
+    <keyword name="xmlpp::DtdValidator::get_dtd" link="classxmlpp_1_1DtdValidator.html#a79e360e68a9c9add90a6791ad4f7302f" type="function"/>
+    <keyword name="xmlpp::DtdValidator::operator bool" link="classxmlpp_1_1DtdValidator.html#af6cf9c1f9b2778bc1a567f3e439645c7" type="function"/>
+    <keyword name="xmlpp::DtdValidator::parse_file" link="classxmlpp_1_1DtdValidator.html#a3469288fd25e37beedfb1a8fb20423c3" type="function"/>
+    <keyword name="xmlpp::DtdValidator::parse_memory" link="classxmlpp_1_1DtdValidator.html#af0d65365eb5fc64c563d2cfa1441743a" type="function"/>
+    <keyword name="xmlpp::DtdValidator::parse_stream" link="classxmlpp_1_1DtdValidator.html#a90b6c313ebfcb48eb1b4785edc7990ec" type="function"/>
+    <keyword name="xmlpp::DtdValidator::parse_subset" link="classxmlpp_1_1DtdValidator.html#a8690586ab70d1b9e8aaedd9b2c760090" type="function"/>
+    <keyword name="xmlpp::DtdValidator::set_dtd" link="classxmlpp_1_1DtdValidator.html#ad3c64288c6940d8bc7c172dc4870a0bc" type="function"/>
+    <keyword name="xmlpp::DtdValidator::validate" link="classxmlpp_1_1DtdValidator.html#a739faee7cbf5cb758f90fd46fec279ef" type="function"/>
+    <keyword name="xmlpp::DtdValidator::initialize_context" link="classxmlpp_1_1DtdValidator.html#ad9038031ce1f4149d2185b38a8bd819a" type="function"/>
+    <keyword name="xmlpp::DtdValidator::release_underlying" link="classxmlpp_1_1DtdValidator.html#a766fb7a278245f3b1673e201135a203e" type="function"/>
+    <keyword type="struct" name="xmlpp::Element" link="classxmlpp_1_1Element.html"/>
+    <keyword name="xmlpp::Element::AttributeList" link="classxmlpp_1_1Element.html#a74581b2c25aaa277cf0153af74fcbc31" type="typedef"/>
+    <keyword name="xmlpp::Element::const_AttributeList" link="classxmlpp_1_1Element.html#afb2a056f183f2c3ddeb1ddf5a9316006" type="typedef"/>
+    <keyword name="xmlpp::Element::Element" link="classxmlpp_1_1Element.html#addce07f26b8ca52beb583d942375a756" type="function"/>
+    <keyword name="xmlpp::Element::~Element" link="classxmlpp_1_1Element.html#a2cdba1990c4620a4b02b4fcd4a4afa2d" type="function"/>
+    <keyword name="xmlpp::Element::add_child_cdata" link="classxmlpp_1_1Element.html#a45b7f4040d66fc847a1040ae961b923d" type="function"/>
+    <keyword name="xmlpp::Element::add_child_comment" link="classxmlpp_1_1Element.html#aee69d63061e05c765d32a686a4434d9d" type="function"/>
+    <keyword name="xmlpp::Element::add_child_element" link="classxmlpp_1_1Element.html#aec3e495a0766d81b5a83e7a3146da683" type="function"/>
+    <keyword name="xmlpp::Element::add_child_element" link="classxmlpp_1_1Element.html#ada475bd91e7deb727aba6fa99f9d1a1b" type="function"/>
+    <keyword name="xmlpp::Element::add_child_element_before" link="classxmlpp_1_1Element.html#ab5ecc3e0312fc29a49aa9b471a947a19" type="function"/>
+    <keyword name="xmlpp::Element::add_child_element_before_with_new_ns" link="classxmlpp_1_1Element.html#a853ac21a9510bbdef9d829dfb6d14dfd" type="function"/>
+    <keyword name="xmlpp::Element::add_child_element_with_new_ns" link="classxmlpp_1_1Element.html#a04d344410c6deb3eee2a1bb9bc478375" type="function"/>
+    <keyword name="xmlpp::Element::add_child_element_with_new_ns" link="classxmlpp_1_1Element.html#ad850fef0eb9000bc858e5b2dc0e55092" type="function"/>
+    <keyword name="xmlpp::Element::add_child_entity_reference" link="classxmlpp_1_1Element.html#a775c3a4b5da4d168376b0a61a1ad2040" type="function"/>
+    <keyword name="xmlpp::Element::add_child_processing_instruction" link="classxmlpp_1_1Element.html#a180c2e543c9ad54d352f364ad8241622" type="function"/>
+    <keyword name="xmlpp::Element::add_child_text" link="classxmlpp_1_1Element.html#a29128571895c5f7b77382ed69c18726c" type="function"/>
+    <keyword name="xmlpp::Element::add_child_text" link="classxmlpp_1_1Element.html#afe27ad61606dac9da274c8b43c5708aa" type="function"/>
+    <keyword name="xmlpp::Element::add_child_text_before" link="classxmlpp_1_1Element.html#a67870433ece791c1204aef49d4348319" type="function"/>
+    <keyword name="xmlpp::Element::get_attribute" link="classxmlpp_1_1Element.html#a5786c9bbdcb50b0defe8cfb4e51c1fca" type="function"/>
+    <keyword name="xmlpp::Element::get_attribute" link="classxmlpp_1_1Element.html#a4cd49ca593243f4d30b9fae7cc14175b" type="function"/>
+    <keyword name="xmlpp::Element::get_attribute_value" link="classxmlpp_1_1Element.html#a4d704c3d807bc55f47945e3da7ee1428" type="function"/>
+    <keyword name="xmlpp::Element::get_attributes" link="classxmlpp_1_1Element.html#a8fbb85e7ecabc5a8b9b39638f94e4fb7" type="function"/>
+    <keyword name="xmlpp::Element::get_attributes" link="classxmlpp_1_1Element.html#a215ca85858f1c51648a153a9c03154d7" type="function"/>
+    <keyword name="xmlpp::Element::get_first_child_text" link="classxmlpp_1_1Element.html#ab69d8c22b51bcfddebc1b52d0739db8c" type="function"/>
+    <keyword name="xmlpp::Element::get_first_child_text" link="classxmlpp_1_1Element.html#a3dbda06fa105905e7e138585946ddd6e" type="function"/>
+    <keyword name="xmlpp::Element::has_child_text" link="classxmlpp_1_1Element.html#aaf163cefbd08210bdb3c00598ef4164f" type="function"/>
+    <keyword name="xmlpp::Element::remove_attribute" link="classxmlpp_1_1Element.html#a9959d2eba5aaaf5f98086a6f560a7469" type="function"/>
+    <keyword name="xmlpp::Element::set_attribute" link="classxmlpp_1_1Element.html#ac9b29402f1d61113d8a8929f28d106d8" type="function"/>
+    <keyword name="xmlpp::Element::set_first_child_text" link="classxmlpp_1_1Element.html#a16b60b87a98064e053c75098c74887e7" type="function"/>
+    <keyword name="xmlpp::Element::set_namespace_declaration" link="classxmlpp_1_1Element.html#a4ff97d55a647c9d3ac8ea77b978124d1" type="function"/>
+    <keyword type="struct" name="xmlpp::EntityDeclaration" link="classxmlpp_1_1EntityDeclaration.html"/>
+    <keyword name="xmlpp::EntityDeclaration::EntityDeclaration" link="classxmlpp_1_1EntityDeclaration.html#aa3d1fe2fc91b490ac48448e20d7689a8" type="function"/>
+    <keyword name="xmlpp::EntityDeclaration::~EntityDeclaration" link="classxmlpp_1_1EntityDeclaration.html#a00795f409155f9d943d004e8267f6767" type="function"/>
+    <keyword name="xmlpp::EntityDeclaration::cobj" link="classxmlpp_1_1EntityDeclaration.html#a99471174f2a8bf0163274bbdb5470356" type="function"/>
+    <keyword name="xmlpp::EntityDeclaration::cobj" link="classxmlpp_1_1EntityDeclaration.html#a7c76acd7f7f62d2af34ea9f9666c8437" type="function"/>
+    <keyword name="xmlpp::EntityDeclaration::get_original_text" link="classxmlpp_1_1EntityDeclaration.html#ab6ce4450c32b60fd605150d3a2fac61e" type="function"/>
+    <keyword name="xmlpp::EntityDeclaration::get_resolved_text" link="classxmlpp_1_1EntityDeclaration.html#a6292d82856086570c4c00aa682fb814f" type="function"/>
+    <keyword type="struct" name="xmlpp::EntityReference" link="classxmlpp_1_1EntityReference.html"/>
+    <keyword name="xmlpp::EntityReference::EntityReference" link="classxmlpp_1_1EntityReference.html#a8f575183a2c1caa8e3a223f0292f83cf" type="function"/>
+    <keyword name="xmlpp::EntityReference::~EntityReference" link="classxmlpp_1_1EntityReference.html#a94253545a8d96ee579463f1f11c7ac08" type="function"/>
+    <keyword name="xmlpp::EntityReference::get_original_text" link="classxmlpp_1_1EntityReference.html#ad996c7b2be128882550383f043b8971f" type="function"/>
+    <keyword name="xmlpp::EntityReference::get_resolved_text" link="classxmlpp_1_1EntityReference.html#ac612da291daa1d5bc9837a088ce499aa" type="function"/>
+    <keyword type="struct" name="xmlpp::exception" link="classxmlpp_1_1exception.html"/>
+    <keyword name="xmlpp::exception::exception" link="classxmlpp_1_1exception.html#a9d324935b7c94f7a27d59eadfcf52ea8" type="function"/>
+    <keyword name="xmlpp::exception::~exception" link="classxmlpp_1_1exception.html#a223181a991f32a8520038aa891e58c68" type="function"/>
+    <keyword name="xmlpp::exception::clone" link="classxmlpp_1_1exception.html#ac91a896a3f4be1b6876bf5233beed212" type="function"/>
+    <keyword name="xmlpp::exception::raise" link="classxmlpp_1_1exception.html#aede0397917c1f5aa5c5de37e180dc81a" type="function"/>
+    <keyword name="xmlpp::exception::what" link="classxmlpp_1_1exception.html#a20da94debf776c44d7d3fe2960096de3" type="function"/>
+    <keyword type="struct" name="xmlpp::internal_error" link="classxmlpp_1_1internal__error.html"/>
+    <keyword name="xmlpp::internal_error::internal_error" link="classxmlpp_1_1internal__error.html#ad3e0b37021be7f5347ab92290f19a451" type="function"/>
+    <keyword name="xmlpp::internal_error::~internal_error" link="classxmlpp_1_1internal__error.html#a047f83c74ea0b06464d63e1912ffcbb3" type="function"/>
+    <keyword name="xmlpp::internal_error::clone" link="classxmlpp_1_1internal__error.html#ab301a79cec0e6fedb76ed5fc8a40566c" type="function"/>
+    <keyword name="xmlpp::internal_error::raise" link="classxmlpp_1_1internal__error.html#a9742adca987fdb6c2774fc02e520b7f8" type="function"/>
+    <keyword type="struct" name="xmlpp::IStreamParserInputBuffer" link="classxmlpp_1_1IStreamParserInputBuffer.html"/>
+    <keyword name="xmlpp::IStreamParserInputBuffer::IStreamParserInputBuffer" link="classxmlpp_1_1IStreamParserInputBuffer.html#aba70d93277d719a332b1a75fc8cf221c" type="function"/>
+    <keyword name="xmlpp::IStreamParserInputBuffer::~IStreamParserInputBuffer" link="classxmlpp_1_1IStreamParserInputBuffer.html#a537279939b28048b9f1761b42bd0423f" type="function"/>
+    <keyword type="struct" name="xmlpp::KeepBlanks" link="classxmlpp_1_1KeepBlanks.html"/>
+    <keyword name="xmlpp::KeepBlanks::KeepBlanks" link="classxmlpp_1_1KeepBlanks.html#a1ae815306618ddfc958b047deb35e4d6" type="function"/>
+    <keyword name="xmlpp::KeepBlanks::~KeepBlanks" link="classxmlpp_1_1KeepBlanks.html#a976af9a99c3ad010afd35f03f4bdfc1d" type="function"/>
+    <keyword type="struct" name="xmlpp::Node" link="classxmlpp_1_1Node.html"/>
+    <keyword name="xmlpp::Node::const_NodeList" link="classxmlpp_1_1Node.html#a97f19f7f19c763f616eadb702680826f" type="typedef"/>
+    <keyword name="xmlpp::Node::const_NodeSet" link="classxmlpp_1_1Node.html#a57dba85e747dbe53ff768955bc3ca46b" type="typedef"/>
+    <keyword name="xmlpp::Node::NodeList" link="classxmlpp_1_1Node.html#aec484e80254d11ae0f7046e011287a18" type="typedef"/>
+    <keyword name="xmlpp::Node::NodeSet" link="classxmlpp_1_1Node.html#aabbb1903a13e213fa94898a76518ebc6" type="typedef"/>
+    <keyword name="xmlpp::Node::PrefixNsMap" link="classxmlpp_1_1Node.html#a17584286cf6aea618a6d0878add65450" type="typedef"/>
+    <keyword name="xmlpp::Node::Node" link="classxmlpp_1_1Node.html#a215d8c01b6b01596c4ea853f99dce8e7" type="function"/>
+    <keyword name="xmlpp::Node::~Node" link="classxmlpp_1_1Node.html#aed8dc1eea15e3e1ac42b43a49c3016ba" type="function"/>
+    <keyword name="xmlpp::Node::cobj" link="classxmlpp_1_1Node.html#a8d61ce066ad6ec4fca1e5637f7ec59a6" type="function"/>
+    <keyword name="xmlpp::Node::cobj" link="classxmlpp_1_1Node.html#a648a236bfd53dcf4405446c8569d71b5" type="function"/>
+    <keyword name="xmlpp::Node::eval_to_boolean" link="classxmlpp_1_1Node.html#a259a1012c1a8cfb9c95ee51a7c3f9026" type="function"/>
+    <keyword name="xmlpp::Node::eval_to_boolean" link="classxmlpp_1_1Node.html#a0762a2fda0ede4be6f6a4a23c2eb2ae2" type="function"/>
+    <keyword name="xmlpp::Node::eval_to_number" link="classxmlpp_1_1Node.html#add6d8da74d2014427a929fbc0464a4b8" type="function"/>
+    <keyword name="xmlpp::Node::eval_to_number" link="classxmlpp_1_1Node.html#a1485086156a31d55f9079031429c94a7" type="function"/>
+    <keyword name="xmlpp::Node::eval_to_string" link="classxmlpp_1_1Node.html#aac3b5cb1dd19d79862b90ddc969946a6" type="function"/>
+    <keyword name="xmlpp::Node::eval_to_string" link="classxmlpp_1_1Node.html#a3535280c79cf5ba785dbde7ec25c71ee" type="function"/>
+    <keyword name="xmlpp::Node::find" link="classxmlpp_1_1Node.html#a49686535bafb0f17cac3a3b12b8ce769" type="function"/>
+    <keyword name="xmlpp::Node::find" link="classxmlpp_1_1Node.html#a8209b97d6a45847709f121bb75f1b144" type="function"/>
+    <keyword name="xmlpp::Node::find" link="classxmlpp_1_1Node.html#ab4676913f9287edf6ff7615ef9e7b611" type="function"/>
+    <keyword name="xmlpp::Node::find" link="classxmlpp_1_1Node.html#a48b8647c689a5b081ab526ffa4f1f7b9" type="function"/>
+    <keyword name="xmlpp::Node::get_children" link="classxmlpp_1_1Node.html#a85ddea4c2314e086ef28d89436ab72a0" type="function"/>
+    <keyword name="xmlpp::Node::get_children" link="classxmlpp_1_1Node.html#a67efde594ecca38fb48465e2aee414fd" type="function"/>
+    <keyword name="xmlpp::Node::get_first_child" link="classxmlpp_1_1Node.html#aee68120e2ec8e345098461b7f9ead6b0" type="function"/>
+    <keyword name="xmlpp::Node::get_first_child" link="classxmlpp_1_1Node.html#a7d5b6c0fe037c89ceb13aaee65acd2a9" type="function"/>
+    <keyword name="xmlpp::Node::get_line" link="classxmlpp_1_1Node.html#acb268824e43544ae4c431192d0b64d6c" type="function"/>
+    <keyword name="xmlpp::Node::get_name" link="classxmlpp_1_1Node.html#a241a2a8259f4d1f88a1ff350e4ec31a3" type="function"/>
+    <keyword name="xmlpp::Node::get_namespace_prefix" link="classxmlpp_1_1Node.html#ad04dc0c8607a0325cb91b97beb681560" type="function"/>
+    <keyword name="xmlpp::Node::get_namespace_uri" link="classxmlpp_1_1Node.html#a05daa979133adce46e25cfcee1de98c2" type="function"/>
+    <keyword name="xmlpp::Node::get_next_sibling" link="classxmlpp_1_1Node.html#a2576ce35a6a3dd13b49e857524360ac4" type="function"/>
+    <keyword name="xmlpp::Node::get_next_sibling" link="classxmlpp_1_1Node.html#a46801c7ceac58eef36b87e82b23fe171" type="function"/>
+    <keyword name="xmlpp::Node::get_parent" link="classxmlpp_1_1Node.html#a998e8cb924bd04abf72e57b68d2817f4" type="function"/>
+    <keyword name="xmlpp::Node::get_parent" link="classxmlpp_1_1Node.html#a12d1a5de2b8314c6588b23ddb83ac7e5" type="function"/>
+    <keyword name="xmlpp::Node::get_path" link="classxmlpp_1_1Node.html#a9dfeaacfd4bcd0737c31c07f23fe8e75" type="function"/>
+    <keyword name="xmlpp::Node::get_previous_sibling" link="classxmlpp_1_1Node.html#a567be4ebaffb2cd3dd2ae602c8df4a29" type="function"/>
+    <keyword name="xmlpp::Node::get_previous_sibling" link="classxmlpp_1_1Node.html#a9c2169d1a0829acbc9a9ec5df4219b0b" type="function"/>
+    <keyword name="xmlpp::Node::import_node" link="classxmlpp_1_1Node.html#aea42eae72fa7901aa1fb8f5c0fd194ec" type="function"/>
+    <keyword name="xmlpp::Node::set_name" link="classxmlpp_1_1Node.html#ab57a323ddd24a12707e27efa26b2b7c1" type="function"/>
+    <keyword name="xmlpp::Node::set_namespace" link="classxmlpp_1_1Node.html#ac7fb69ff6ff91d88996911da31ed5976" type="function"/>
+    <keyword name="xmlpp::Node::create_wrapper" link="classxmlpp_1_1Node.html#a616a872d0fbd86206c0beee0be5abee3" type="function"/>
+    <keyword name="xmlpp::Node::free_wrappers" link="classxmlpp_1_1Node.html#aa47901df78305a685fc9682cd44290d6" type="function"/>
+    <keyword name="xmlpp::Node::remove_node" link="classxmlpp_1_1Node.html#af3af70bdc909d8d272b3df0634fb291b" type="function"/>
+    <keyword type="struct" name="xmlpp::NonCopyable" link="classxmlpp_1_1NonCopyable.html"/>
+    <keyword name="xmlpp::NonCopyable::NonCopyable" link="classxmlpp_1_1NonCopyable.html#aded750a42a8acdd5ed63827c158f7763" type="function"/>
+    <keyword name="xmlpp::NonCopyable::NonCopyable" link="classxmlpp_1_1NonCopyable.html#a537645a43274a8d742eed00a35ffb917" type="function"/>
+    <keyword name="xmlpp::NonCopyable::operator=" link="classxmlpp_1_1NonCopyable.html#adef35c286da3c2b8c90da9bb50aaddf1" type="function"/>
+    <keyword name="xmlpp::NonCopyable::operator=" link="classxmlpp_1_1NonCopyable.html#a9888c9e5345760386ac57ff6439a30e4" type="function"/>
+    <keyword name="xmlpp::NonCopyable::NonCopyable" link="classxmlpp_1_1NonCopyable.html#a96e2e5582c5bb88b2dea2adb9f9512e2" type="function"/>
+    <keyword name="xmlpp::NonCopyable::~NonCopyable" link="classxmlpp_1_1NonCopyable.html#a14e2e0391beb4b8f20f5d51e8a253d63" type="function"/>
+    <keyword type="struct" name="xmlpp::OStreamOutputBuffer" link="classxmlpp_1_1OStreamOutputBuffer.html"/>
+    <keyword name="xmlpp::OStreamOutputBuffer::OStreamOutputBuffer" link="classxmlpp_1_1OStreamOutputBuffer.html#a2bac314b735f9414c4ff94c174b3f405" type="function"/>
+    <keyword name="xmlpp::OStreamOutputBuffer::~OStreamOutputBuffer" link="classxmlpp_1_1OStreamOutputBuffer.html#a4b68f58dcf3dd23bb3b061b792d8d6b7" type="function"/>
+    <keyword type="struct" name="xmlpp::OutputBuffer" link="classxmlpp_1_1OutputBuffer.html"/>
+    <keyword name="xmlpp::OutputBuffer::OutputBuffer" link="classxmlpp_1_1OutputBuffer.html#a1e3dfd6652c71580cf1ed9daabc8552a" type="function"/>
+    <keyword name="xmlpp::OutputBuffer::~OutputBuffer" link="classxmlpp_1_1OutputBuffer.html#a14b8d46202a8dcfc73da8093fc45fc99" type="function"/>
+    <keyword name="xmlpp::OutputBuffer::cobj" link="classxmlpp_1_1OutputBuffer.html#a6158a3702360ea2a69a1a32f5877f3fd" type="function"/>
+    <keyword name="xmlpp::OutputBuffer::cobj" link="classxmlpp_1_1OutputBuffer.html#aa9b89dc5d64a418760d68cf6c9f39655" type="function"/>
+    <keyword name="xmlpp::OutputBuffer::OutputBufferCallback" link="classxmlpp_1_1OutputBuffer.html#ace09b059d166044ed816ac7243fd5e83" type="function"/>
+    <keyword type="struct" name="xmlpp::parse_error" link="classxmlpp_1_1parse__error.html"/>
+    <keyword name="xmlpp::parse_error::parse_error" link="classxmlpp_1_1parse__error.html#a49b15d1d34d9261650bbc12e53696720" type="function"/>
+    <keyword name="xmlpp::parse_error::~parse_error" link="classxmlpp_1_1parse__error.html#afb4245d798c9f2856629a21de4ec0bb4" type="function"/>
+    <keyword name="xmlpp::parse_error::clone" link="classxmlpp_1_1parse__error.html#a8f700a7df65a51cc4011a87e92387351" type="function"/>
+    <keyword name="xmlpp::parse_error::raise" link="classxmlpp_1_1parse__error.html#ac95afd92936f9f3483280fa6ba0a862d" type="function"/>
+    <keyword type="struct" name="xmlpp::Parser" link="classxmlpp_1_1Parser.html"/>
+    <keyword name="xmlpp::Parser::size_type" link="classxmlpp_1_1Parser.html#a80e25b951a9603ade7c296b3d7518197" type="typedef"/>
+    <keyword name="xmlpp::Parser::Parser" link="classxmlpp_1_1Parser.html#ab2990f22147cb2163eda6e773fb2eb68" type="function"/>
+    <keyword name="xmlpp::Parser::~Parser" link="classxmlpp_1_1Parser.html#a7ac083cc800cc7699e7b5ad0be160218" type="function"/>
+    <keyword name="xmlpp::Parser::get_include_default_attributes" link="classxmlpp_1_1Parser.html#a05132cd51307aeee4bfee49226128504" type="function"/>
+    <keyword name="xmlpp::Parser::get_parser_options" link="classxmlpp_1_1Parser.html#ae23f73d42cd31025c79b344df6d4c616" type="function"/>
+    <keyword name="xmlpp::Parser::get_substitute_entities" link="classxmlpp_1_1Parser.html#a883c7670871c2204dd88210d612edf88" type="function"/>
+    <keyword name="xmlpp::Parser::get_throw_messages" link="classxmlpp_1_1Parser.html#a76e87f6715546415bb340d7973f08f7e" type="function"/>
+    <keyword name="xmlpp::Parser::get_validate" link="classxmlpp_1_1Parser.html#aa9d0585cd1cc26475af0f30529466670" type="function"/>
+    <keyword name="xmlpp::Parser::parse_file" link="classxmlpp_1_1Parser.html#a68a6b6ac6c9e9eec2a13d84d52af0792" type="function"/>
+    <keyword name="xmlpp::Parser::parse_memory" link="classxmlpp_1_1Parser.html#a6375a0231475d58aa744cb6f63f0ed0d" type="function"/>
+    <keyword name="xmlpp::Parser::parse_memory_raw" link="classxmlpp_1_1Parser.html#a770421f1b0556e9ab8e9f5b40ef7c261" type="function"/>
+    <keyword name="xmlpp::Parser::parse_stream" link="classxmlpp_1_1Parser.html#ad7134b1c68308351785acb0302aa54db" type="function"/>
+    <keyword name="xmlpp::Parser::set_include_default_attributes" link="classxmlpp_1_1Parser.html#a0f3408255b3fcbe02372d44efd2b67e7" type="function"/>
+    <keyword name="xmlpp::Parser::set_parser_options" link="classxmlpp_1_1Parser.html#a380f982579a2609810f4f6f7933b202b" type="function"/>
+    <keyword name="xmlpp::Parser::set_substitute_entities" link="classxmlpp_1_1Parser.html#ab34607b5ffab66aa9da2036f304c854f" type="function"/>
+    <keyword name="xmlpp::Parser::set_throw_messages" link="classxmlpp_1_1Parser.html#a340c9434d61dab256c18d8d9066b5170" type="function"/>
+    <keyword name="xmlpp::Parser::set_validate" link="classxmlpp_1_1Parser.html#aeb6aaabf12788fb30fc267d2ef50f9b1" type="function"/>
+    <keyword name="xmlpp::Parser::MsgType" link="classxmlpp_1_1Parser.html#a8bfd5ceb1cc0b3b9fd9ff7cf44d1029b" type="enum"/>
+    <keyword name="xmlpp::Parser::check_for_error_and_warning_messages" link="classxmlpp_1_1Parser.html#af5593cd0273664654286d411685b6e8a" type="function"/>
+    <keyword name="xmlpp::Parser::check_for_exception" link="classxmlpp_1_1Parser.html#a9daba11c6746d91153329a9dbd8decc5" type="function"/>
+    <keyword name="xmlpp::Parser::handle_exception" link="classxmlpp_1_1Parser.html#a7d5a17f37b85871c058760c2136beb72" type="function"/>
+    <keyword name="xmlpp::Parser::initialize_context" link="classxmlpp_1_1Parser.html#a25f92d0a820d96accfe316a066bade49" type="function"/>
+    <keyword name="xmlpp::Parser::on_parser_error" link="classxmlpp_1_1Parser.html#aa0c8c185efe3c627dfa81b35a5a386ac" type="function"/>
+    <keyword name="xmlpp::Parser::on_parser_warning" link="classxmlpp_1_1Parser.html#ad4e46a426ed70644926abe8168435fc7" type="function"/>
+    <keyword name="xmlpp::Parser::on_validity_error" link="classxmlpp_1_1Parser.html#aab432a35ec6784e1d4b3b935329f2e8c" type="function"/>
+    <keyword name="xmlpp::Parser::on_validity_warning" link="classxmlpp_1_1Parser.html#ab80ceca415301e68c254e82e250ba32a" type="function"/>
+    <keyword name="xmlpp::Parser::release_underlying" link="classxmlpp_1_1Parser.html#a346ebfb1219e1c0d3acbd017a07706e6" type="function"/>
+    <keyword name="xmlpp::Parser::callback_error_or_warning" link="classxmlpp_1_1Parser.html#a49b79a6ada464e8d1be27a655ee63b48" type="function"/>
+    <keyword name="xmlpp::Parser::callback_parser_error" link="classxmlpp_1_1Parser.html#ae5272535b144daaafcdc161e36f1aa33" type="function"/>
+    <keyword name="xmlpp::Parser::callback_parser_warning" link="classxmlpp_1_1Parser.html#a7dbe69dcd8aa5c7625fa96a9dcdcbad7" type="function"/>
+    <keyword name="xmlpp::Parser::callback_validity_error" link="classxmlpp_1_1Parser.html#a7ec91483923a6023e7ac56eeaf16b1e3" type="function"/>
+    <keyword name="xmlpp::Parser::callback_validity_warning" link="classxmlpp_1_1Parser.html#aa573fc538688db238714cef413944567" type="function"/>
+    <keyword type="struct" name="xmlpp::ParserInputBuffer" link="classxmlpp_1_1ParserInputBuffer.html"/>
+    <keyword name="xmlpp::ParserInputBuffer::ParserInputBuffer" link="classxmlpp_1_1ParserInputBuffer.html#a546358e9f85fd99b4ac4e1a2b1844ce5" type="function"/>
+    <keyword name="xmlpp::ParserInputBuffer::~ParserInputBuffer" link="classxmlpp_1_1ParserInputBuffer.html#a449a3f11af8aba15b557bb9a27275ce0" type="function"/>
+    <keyword name="xmlpp::ParserInputBuffer::cobj" link="classxmlpp_1_1ParserInputBuffer.html#ad2d567cc5f0a6546aca5c7f9c12b687c" type="function"/>
+    <keyword name="xmlpp::ParserInputBuffer::cobj" link="classxmlpp_1_1ParserInputBuffer.html#a8ee7dc94faca5e36aa325da991639c04" type="function"/>
+    <keyword name="xmlpp::ParserInputBuffer::ParserInputBufferCallback" link="classxmlpp_1_1ParserInputBuffer.html#a070e296700c3eb17d31982012b5fde51" type="function"/>
+    <keyword type="struct" name="xmlpp::ProcessingInstructionNode" link="classxmlpp_1_1ProcessingInstructionNode.html"/>
+    <keyword name="xmlpp::ProcessingInstructionNode::ProcessingInstructionNode" link="classxmlpp_1_1ProcessingInstructionNode.html#a609246dff62dbc2bc86eaf9a8c393fda" type="function"/>
+    <keyword name="xmlpp::ProcessingInstructionNode::~ProcessingInstructionNode" link="classxmlpp_1_1ProcessingInstructionNode.html#aac164a4ac0f378a303acc3d118ab80bd" type="function"/>
+    <keyword type="struct" name="xmlpp::RelaxNGSchema" link="classxmlpp_1_1RelaxNGSchema.html"/>
+    <keyword name="xmlpp::RelaxNGSchema::RelaxNGSchema" link="classxmlpp_1_1RelaxNGSchema.html#a747dee0d21f943513e3d8f8460e6b2fd" type="function"/>
+    <keyword name="xmlpp::RelaxNGSchema::RelaxNGSchema" link="classxmlpp_1_1RelaxNGSchema.html#a7d309a12c26a9548c28616f4c273e001" type="function"/>
+    <keyword name="xmlpp::RelaxNGSchema::RelaxNGSchema" link="classxmlpp_1_1RelaxNGSchema.html#ac262630e9f267e2f7dc380ea42598cad" type="function"/>
+    <keyword name="xmlpp::RelaxNGSchema::RelaxNGSchema" link="classxmlpp_1_1RelaxNGSchema.html#aeb0fb11bd879ec40bbaaa90c90916984" type="function"/>
+    <keyword name="xmlpp::RelaxNGSchema::~RelaxNGSchema" link="classxmlpp_1_1RelaxNGSchema.html#a7c7ec7550409cbcaeb3c8344064516f9" type="function"/>
+    <keyword name="xmlpp::RelaxNGSchema::cobj" link="classxmlpp_1_1RelaxNGSchema.html#a195208fb95a2bee4b02fa1016f402c7d" type="function"/>
+    <keyword name="xmlpp::RelaxNGSchema::cobj" link="classxmlpp_1_1RelaxNGSchema.html#a2b8dba40e6624461e35ae9c8d9654ce5" type="function"/>
+    <keyword name="xmlpp::RelaxNGSchema::parse_document" link="classxmlpp_1_1RelaxNGSchema.html#a547d258651169796055ccc76179c129b" type="function"/>
+    <keyword name="xmlpp::RelaxNGSchema::parse_file" link="classxmlpp_1_1RelaxNGSchema.html#ab66ef2702678ed7a60679103ab5f7851" type="function"/>
+    <keyword name="xmlpp::RelaxNGSchema::parse_memory" link="classxmlpp_1_1RelaxNGSchema.html#a6370743b3f36ea19fe234c153ed0d0ed" type="function"/>
+    <keyword name="xmlpp::RelaxNGSchema::parse_context" link="classxmlpp_1_1RelaxNGSchema.html#a0b53e1bc6c2600a30694560f23464a78" type="function"/>
+    <keyword name="xmlpp::RelaxNGSchema::release_underlying" link="classxmlpp_1_1RelaxNGSchema.html#af6f16231680d5749926ecaab71b248be" type="function"/>
+    <keyword type="struct" name="xmlpp::RelaxNGValidator" link="classxmlpp_1_1RelaxNGValidator.html"/>
+    <keyword name="xmlpp::RelaxNGValidator::RelaxNGValidator" link="classxmlpp_1_1RelaxNGValidator.html#a2528a6b86fefb7ee857366e4f904dc24" type="function"/>
+    <keyword name="xmlpp::RelaxNGValidator::RelaxNGValidator" link="classxmlpp_1_1RelaxNGValidator.html#a390adf7ea5f61c13a35608e595d891e7" type="function"/>
+    <keyword name="xmlpp::RelaxNGValidator::RelaxNGValidator" link="classxmlpp_1_1RelaxNGValidator.html#a4e18b8d9e7726d5947c0d781182c049d" type="function"/>
+    <keyword name="xmlpp::RelaxNGValidator::RelaxNGValidator" link="classxmlpp_1_1RelaxNGValidator.html#aec73525b59cfc71a72ec595697439f94" type="function"/>
+    <keyword name="xmlpp::RelaxNGValidator::~RelaxNGValidator" link="classxmlpp_1_1RelaxNGValidator.html#afcad53ea2495a53a652375238639c276" type="function"/>
+    <keyword name="xmlpp::RelaxNGValidator::get_schema" link="classxmlpp_1_1RelaxNGValidator.html#a5cb673d1ecd5808e7c8eb16964c39f39" type="function"/>
+    <keyword name="xmlpp::RelaxNGValidator::get_schema" link="classxmlpp_1_1RelaxNGValidator.html#a326b8c1984e1c4f7b5b63bc04b546be2" type="function"/>
+    <keyword name="xmlpp::RelaxNGValidator::operator bool" link="classxmlpp_1_1RelaxNGValidator.html#a111bb499e1c60c6fe903ff61d1619500" type="function"/>
+    <keyword name="xmlpp::RelaxNGValidator::parse_document" link="classxmlpp_1_1RelaxNGValidator.html#ab8c741bcc85900c8850841ae346d3f21" type="function"/>
+    <keyword name="xmlpp::RelaxNGValidator::parse_file" link="classxmlpp_1_1RelaxNGValidator.html#aa04fe2c10f0aa7658a43d19d78403d0f" type="function"/>
+    <keyword name="xmlpp::RelaxNGValidator::parse_memory" link="classxmlpp_1_1RelaxNGValidator.html#a231d051f678863e71089d2b5d0e986a9" type="function"/>
+    <keyword name="xmlpp::RelaxNGValidator::set_schema" link="classxmlpp_1_1RelaxNGValidator.html#a986795b7f4bbe5afe36d96b4ff8eaabe" type="function"/>
+    <keyword name="xmlpp::RelaxNGValidator::validate" link="classxmlpp_1_1RelaxNGValidator.html#a5f647c4a04664b273af9b6a19c813d56" type="function"/>
+    <keyword name="xmlpp::RelaxNGValidator::validate" link="classxmlpp_1_1RelaxNGValidator.html#a7b9a5c284b4597ed0c56471557b0c5c8" type="function"/>
+    <keyword name="xmlpp::RelaxNGValidator::initialize_context" link="classxmlpp_1_1RelaxNGValidator.html#a8d010c2e95233974a9e41faaf5f3c17d" type="function"/>
+    <keyword name="xmlpp::RelaxNGValidator::release_underlying" link="classxmlpp_1_1RelaxNGValidator.html#a07e83fc2d5e69ec0e0b4b6833e2c802e" type="function"/>
+    <keyword type="struct" name="xmlpp::SaxParser" link="classxmlpp_1_1SaxParser.html"/>
+    <keyword name="xmlpp::SaxParser::AttributeList" link="classxmlpp_1_1SaxParser.html#a9e507bd6df0ce9f3b66c15c5b3f12e93" type="typedef"/>
+    <keyword name="xmlpp::SaxParser::SaxParser" link="classxmlpp_1_1SaxParser.html#a66bfaafc79c00197010f8d22b2a39df8" type="function"/>
+    <keyword name="xmlpp::SaxParser::~SaxParser" link="classxmlpp_1_1SaxParser.html#adeee772a4c78c253ca8657f54c8e79c0" type="function"/>
+    <keyword name="xmlpp::SaxParser::finish_chunk_parsing" link="classxmlpp_1_1SaxParser.html#af886afd3a2c844ff7d7dccc72097c91e" type="function"/>
+    <keyword name="xmlpp::SaxParser::parse_chunk" link="classxmlpp_1_1SaxParser.html#a522108e04175034577bdb6a2b4415d6b" type="function"/>
+    <keyword name="xmlpp::SaxParser::parse_chunk_raw" link="classxmlpp_1_1SaxParser.html#a501a19205773ac1c843d6007b189860e" type="function"/>
+    <keyword name="xmlpp::SaxParser::parse_file" link="classxmlpp_1_1SaxParser.html#ad38e088441867258fd6f779f1c852d82" type="function"/>
+    <keyword name="xmlpp::SaxParser::parse_memory" link="classxmlpp_1_1SaxParser.html#a9944b38d4d854767ce91286e4b86eb50" type="function"/>
+    <keyword name="xmlpp::SaxParser::parse_memory_raw" link="classxmlpp_1_1SaxParser.html#abb65ebba089241eda05184af0307947d" type="function"/>
+    <keyword name="xmlpp::SaxParser::parse_stream" link="classxmlpp_1_1SaxParser.html#abbf17aa73c77ae9eb29da7dede2847c7" type="function"/>
+    <keyword name="xmlpp::SaxParser::initialize_context" link="classxmlpp_1_1SaxParser.html#ad78989a3782cee04a3a8cc8d32ba2d70" type="function"/>
+    <keyword name="xmlpp::SaxParser::on_cdata_block" link="classxmlpp_1_1SaxParser.html#ab78a3b53a2e59a722b77a219f12b917a" type="function"/>
+    <keyword name="xmlpp::SaxParser::on_characters" link="classxmlpp_1_1SaxParser.html#ac3a16188f648cfd245ac4f0cbfc708d6" type="function"/>
+    <keyword name="xmlpp::SaxParser::on_comment" link="classxmlpp_1_1SaxParser.html#a014ca49365f94e765b33e040f935547b" type="function"/>
+    <keyword name="xmlpp::SaxParser::on_end_document" link="classxmlpp_1_1SaxParser.html#aa7b3090025892829af91f8c51a06ef7b" type="function"/>
+    <keyword name="xmlpp::SaxParser::on_end_element" link="classxmlpp_1_1SaxParser.html#a0138be367093b00ddcf1f5a7d377f239" type="function"/>
+    <keyword name="xmlpp::SaxParser::on_entity_declaration" link="classxmlpp_1_1SaxParser.html#aadb31060cb503ab151a9eb7c4af0867d" type="function"/>
+    <keyword name="xmlpp::SaxParser::on_error" link="classxmlpp_1_1SaxParser.html#ac5cee6fec5dcd40617b512260670fcf7" type="function"/>
+    <keyword name="xmlpp::SaxParser::on_fatal_error" link="classxmlpp_1_1SaxParser.html#a2a9a9e805ebd192f7c82110221432c23" type="function"/>
+    <keyword name="xmlpp::SaxParser::on_get_entity" link="classxmlpp_1_1SaxParser.html#a13e7d5ffee542f267a4d07f25d7a95cd" type="function"/>
+    <keyword name="xmlpp::SaxParser::on_internal_subset" link="classxmlpp_1_1SaxParser.html#aca3674cabe42dc5c0955a4b5e0d8ba19" type="function"/>
+    <keyword name="xmlpp::SaxParser::on_start_document" link="classxmlpp_1_1SaxParser.html#a0a33932c84e245284414003f668b829f" type="function"/>
+    <keyword name="xmlpp::SaxParser::on_start_element" link="classxmlpp_1_1SaxParser.html#a4fd420b4cb4692c012e996384e260d71" type="function"/>
+    <keyword name="xmlpp::SaxParser::on_warning" link="classxmlpp_1_1SaxParser.html#aad8cb19c64a9db45af7ae408daee89c4" type="function"/>
+    <keyword name="xmlpp::SaxParser::release_underlying" link="classxmlpp_1_1SaxParser.html#a605b572e51939279e83c6949d02355e1" type="function"/>
+    <keyword name="xmlpp::SaxParser::SaxParserCallback" link="classxmlpp_1_1SaxParser.html#af6957a9354f608a7784028e9e94aba14" type="function"/>
+    <keyword type="struct" name="xmlpp::SaxParser::Attribute" link="structxmlpp_1_1SaxParser_1_1Attribute.html"/>
+    <keyword name="xmlpp::SaxParser::Attribute::Attribute" link="structxmlpp_1_1SaxParser_1_1Attribute.html#acca00f5dc380eb8b6c23b523d17f4923" type="function"/>
+    <keyword type="struct" name="xmlpp::SaxParser::AttributeHasName" link="structxmlpp_1_1SaxParser_1_1AttributeHasName.html"/>
+    <keyword name="xmlpp::SaxParser::AttributeHasName::AttributeHasName" link="structxmlpp_1_1SaxParser_1_1AttributeHasName.html#a30b333d54639c4c99d6a4be85618f53e" type="function"/>
+    <keyword name="xmlpp::SaxParser::AttributeHasName::operator()" link="structxmlpp_1_1SaxParser_1_1AttributeHasName.html#afbd0f609949146293958662da45f75fc" type="function"/>
+    <keyword type="struct" name="xmlpp::SchemaBase" link="classxmlpp_1_1SchemaBase.html"/>
+    <keyword name="xmlpp::SchemaBase::SchemaBase" link="classxmlpp_1_1SchemaBase.html#ac076f2b75042a74168fdf1d1fa46dc12" type="function"/>
+    <keyword name="xmlpp::SchemaBase::~SchemaBase" link="classxmlpp_1_1SchemaBase.html#a746df1307fcddeb3bbbf1f2ac834d79b" type="function"/>
+    <keyword name="xmlpp::SchemaBase::parse_document" link="classxmlpp_1_1SchemaBase.html#a0591e2b2adcb6cdceeb422526c133024" type="function"/>
+    <keyword name="xmlpp::SchemaBase::parse_file" link="classxmlpp_1_1SchemaBase.html#af46370c4f2f7ee1a6ff051ba10003cef" type="function"/>
+    <keyword name="xmlpp::SchemaBase::parse_memory" link="classxmlpp_1_1SchemaBase.html#ab34098351c8f02c972faa13d7005dd52" type="function"/>
+    <keyword type="struct" name="xmlpp::SchemaValidatorBase" link="classxmlpp_1_1SchemaValidatorBase.html"/>
+    <keyword name="xmlpp::SchemaValidatorBase::SchemaValidatorBase" link="classxmlpp_1_1SchemaValidatorBase.html#a1c167ae22afbe0068fbd74337a38eb33" type="function"/>
+    <keyword name="xmlpp::SchemaValidatorBase::~SchemaValidatorBase" link="classxmlpp_1_1SchemaValidatorBase.html#a12420d3e5f5f42344d25a1215d300cdf" type="function"/>
+    <keyword name="xmlpp::SchemaValidatorBase::operator bool" link="classxmlpp_1_1SchemaValidatorBase.html#a2e52de03c85bc8401a1d2a3e68a98426" type="function"/>
+    <keyword name="xmlpp::SchemaValidatorBase::parse_document" link="classxmlpp_1_1SchemaValidatorBase.html#aeb060a5d673e874faba60cccaae501e3" type="function"/>
+    <keyword name="xmlpp::SchemaValidatorBase::parse_file" link="classxmlpp_1_1SchemaValidatorBase.html#ae611b77fd8ae30f9846f1a453823ee72" type="function"/>
+    <keyword name="xmlpp::SchemaValidatorBase::parse_memory" link="classxmlpp_1_1SchemaValidatorBase.html#a896d1e149a6bcde7a38cf4063d6854a5" type="function"/>
+    <keyword name="xmlpp::SchemaValidatorBase::validate" link="classxmlpp_1_1SchemaValidatorBase.html#a4375abb732891248d1399e9d1f8e9deb" type="function"/>
+    <keyword name="xmlpp::SchemaValidatorBase::validate" link="classxmlpp_1_1SchemaValidatorBase.html#a6dfb68a1f7630786eaadb766213ef31e" type="function"/>
+    <keyword name="xmlpp::SchemaValidatorBase::initialize_context" link="classxmlpp_1_1SchemaValidatorBase.html#ab15204c082a29bb0390e06a5e4b2daf0" type="function"/>
+    <keyword name="xmlpp::SchemaValidatorBase::release_underlying" link="classxmlpp_1_1SchemaValidatorBase.html#a3940b83397561cc5b57bd733fc8601f7" type="function"/>
+    <keyword type="struct" name="xmlpp::TextNode" link="classxmlpp_1_1TextNode.html"/>
+    <keyword name="xmlpp::TextNode::TextNode" link="classxmlpp_1_1TextNode.html#a4838cc566ae92f31c3773ce8b03b061d" type="function"/>
+    <keyword name="xmlpp::TextNode::~TextNode" link="classxmlpp_1_1TextNode.html#a21c3d468ef62f899900c5f2d08980f6f" type="function"/>
+    <keyword type="struct" name="xmlpp::TextReader" link="classxmlpp_1_1TextReader.html"/>
+    <keyword name="xmlpp::TextReader::NodeType" link="classxmlpp_1_1TextReader.html#a9fddda4cdb3c47faaecc41ee225836b6" type="enum"/>
+    <keyword name="xmlpp::TextReader::ParserProperties" link="classxmlpp_1_1TextReader.html#a5cb6d36f5367eec5e986d815e60ad292" type="enum"/>
+    <keyword name="xmlpp::TextReader::ReadState" link="classxmlpp_1_1TextReader.html#ab551328f507e008e778d2a0fb3ae61e6" type="enum"/>
+    <keyword name="xmlpp::TextReader::size_type" link="classxmlpp_1_1TextReader.html#aa27b413e081b6a1d73916e32a8b0dedd" type="typedef"/>
+    <keyword name="xmlpp::TextReader::TextReader" link="classxmlpp_1_1TextReader.html#a8d8e2ff4a24a4e7054c73f5b8d983b87" type="function"/>
+    <keyword name="xmlpp::TextReader::TextReader" link="classxmlpp_1_1TextReader.html#af2acd371266d5d6bd430dec5700a95ea" type="function"/>
+    <keyword name="xmlpp::TextReader::TextReader" link="classxmlpp_1_1TextReader.html#ae40f56d8714593bef690bedafad23f8f" type="function"/>
+    <keyword name="xmlpp::TextReader::~TextReader" link="classxmlpp_1_1TextReader.html#a87d58d4ae7c3b3252bee49cdd78447e8" type="function"/>
+    <keyword name="xmlpp::TextReader::close" link="classxmlpp_1_1TextReader.html#a5cf337c94758e54214f7bbe23f61b13d" type="function"/>
+    <keyword name="xmlpp::TextReader::expand" link="classxmlpp_1_1TextReader.html#a6eeec8656e65a93c7b7496f17d288882" type="function"/>
+    <keyword name="xmlpp::TextReader::get_attribute" link="classxmlpp_1_1TextReader.html#a63676c7289b9cb1e9645ef1e4e673f39" type="function"/>
+    <keyword name="xmlpp::TextReader::get_attribute" link="classxmlpp_1_1TextReader.html#aae7e749a8b05eca2f199b8b94b7f1635" type="function"/>
+    <keyword name="xmlpp::TextReader::get_attribute" link="classxmlpp_1_1TextReader.html#a97b49a490503119e683a6faa9879eff6" type="function"/>
+    <keyword name="xmlpp::TextReader::get_attribute_count" link="classxmlpp_1_1TextReader.html#ad0de20a6bdd0cdddaf2cdf725e13cd63" type="function"/>
+    <keyword name="xmlpp::TextReader::get_base_uri" link="classxmlpp_1_1TextReader.html#a22b3bbf5393546aa571971a9d3da355b" type="function"/>
+    <keyword name="xmlpp::TextReader::get_current_node" link="classxmlpp_1_1TextReader.html#a830def19dd26d2c3fb131302f8ed1a31" type="function"/>
+    <keyword name="xmlpp::TextReader::get_current_node" link="classxmlpp_1_1TextReader.html#a10a6402ec6a9b8e9dbd0d53e40e943b8" type="function"/>
+    <keyword name="xmlpp::TextReader::get_depth" link="classxmlpp_1_1TextReader.html#a55ea8a3420282d6567367cf0d93ddfba" type="function"/>
+    <keyword name="xmlpp::TextReader::get_local_name" link="classxmlpp_1_1TextReader.html#adb58a0c32ff126fcafe534c65cd5049b" type="function"/>
+    <keyword name="xmlpp::TextReader::get_name" link="classxmlpp_1_1TextReader.html#aeeb9f49a0601a0e35b1fc23fa05a2949" type="function"/>
+    <keyword name="xmlpp::TextReader::get_namespace_uri" link="classxmlpp_1_1TextReader.html#a7591446772a832e03afea00d43864bc2" type="function"/>
+    <keyword name="xmlpp::TextReader::get_node_type" link="classxmlpp_1_1TextReader.html#a7079705f359800934becfc04f389bb5e" type="function"/>
+    <keyword name="xmlpp::TextReader::get_normalization" link="classxmlpp_1_1TextReader.html#a0503423443b025ddb88d06dc23d078fc" type="function"/>
+    <keyword name="xmlpp::TextReader::get_parser_property" link="classxmlpp_1_1TextReader.html#a6f8b5a375f8da247a8ce4cb3be857db0" type="function"/>
+    <keyword name="xmlpp::TextReader::get_prefix" link="classxmlpp_1_1TextReader.html#ae1d8684327d26a6bcd5c2e735fd9b100" type="function"/>
+    <keyword name="xmlpp::TextReader::get_quote_char" link="classxmlpp_1_1TextReader.html#ac6439b7c3db7107e9e4d6aefb1040350" type="function"/>
+    <keyword name="xmlpp::TextReader::get_read_state" link="classxmlpp_1_1TextReader.html#ab9a508300b54dc7bceea401f1c935fa5" type="function"/>
+    <keyword name="xmlpp::TextReader::get_value" link="classxmlpp_1_1TextReader.html#a7d6ed8a8d4ceba505e5a237ffb9b289b" type="function"/>
+    <keyword name="xmlpp::TextReader::get_xml_lang" link="classxmlpp_1_1TextReader.html#ae5d1f0afed8ba047e62510fbf555ae60" type="function"/>
+    <keyword name="xmlpp::TextReader::has_attributes" link="classxmlpp_1_1TextReader.html#a71f560718ad63feab43f22346cf36478" type="function"/>
+    <keyword name="xmlpp::TextReader::has_value" link="classxmlpp_1_1TextReader.html#abc4acc50332d74e0b4a44a105f44a8ba" type="function"/>
+    <keyword name="xmlpp::TextReader::is_default" link="classxmlpp_1_1TextReader.html#a636f874b44291dc0cbb63d4f3652dbcf" type="function"/>
+    <keyword name="xmlpp::TextReader::is_empty_element" link="classxmlpp_1_1TextReader.html#aaae7ca62ad8ec2f489c8a7e1634e6ab5" type="function"/>
+    <keyword name="xmlpp::TextReader::is_valid" link="classxmlpp_1_1TextReader.html#a2c3c915e64391aa0309e76ee3aff1059" type="function"/>
+    <keyword name="xmlpp::TextReader::lookup_namespace" link="classxmlpp_1_1TextReader.html#ac3708714329bd187caa9e288e7541ea1" type="function"/>
+    <keyword name="xmlpp::TextReader::move_to_attribute" link="classxmlpp_1_1TextReader.html#a63e250554d4f01ad56d1b2c961855698" type="function"/>
+    <keyword name="xmlpp::TextReader::move_to_attribute" link="classxmlpp_1_1TextReader.html#a9cd0e120c0fa0a08af93aee5a7d7e249" type="function"/>
+    <keyword name="xmlpp::TextReader::move_to_attribute" link="classxmlpp_1_1TextReader.html#a78ef028f9250afaca44928847418153a" type="function"/>
+    <keyword name="xmlpp::TextReader::move_to_element" link="classxmlpp_1_1TextReader.html#ae1164a49d5dc855bdc110b0826f752d7" type="function"/>
+    <keyword name="xmlpp::TextReader::move_to_first_attribute" link="classxmlpp_1_1TextReader.html#a724cd1e0238c14c2d2b797b555392fb1" type="function"/>
+    <keyword name="xmlpp::TextReader::move_to_next_attribute" link="classxmlpp_1_1TextReader.html#a3ffee74ac337f73f3205d23c3c0eafec" type="function"/>
+    <keyword name="xmlpp::TextReader::next" link="classxmlpp_1_1TextReader.html#a03c7204c20277f446c64cc7ca15815b2" type="function"/>
+    <keyword name="xmlpp::TextReader::read" link="classxmlpp_1_1TextReader.html#a3a3ee347087889b3f3ef5463dd777ad8" type="function"/>
+    <keyword name="xmlpp::TextReader::read_attribute_value" link="classxmlpp_1_1TextReader.html#a109934670bab6176dc1a8132f1afd5d0" type="function"/>
+    <keyword name="xmlpp::TextReader::read_inner_xml" link="classxmlpp_1_1TextReader.html#a017909e998a008f6f7ef86fcd1b5662e" type="function"/>
+    <keyword name="xmlpp::TextReader::read_outer_xml" link="classxmlpp_1_1TextReader.html#a9b8c02e3008a1d65e7beaa312f1efca6" type="function"/>
+    <keyword name="xmlpp::TextReader::read_string" link="classxmlpp_1_1TextReader.html#a54b3c05c3bdc0572e9546053970cd564" type="function"/>
+    <keyword name="xmlpp::TextReader::set_normalization" link="classxmlpp_1_1TextReader.html#aaf2974eef9c1c77abf50e9c8584f9c40" type="function"/>
+    <keyword name="xmlpp::TextReader::set_parser_property" link="classxmlpp_1_1TextReader.html#a8e5db1b68c5227bf748dfee7f36e8074" type="function"/>
+    <keyword name="xmlpp::TextReader::PropertyReader" link="classxmlpp_1_1TextReader.html#af114c5227ff562edb289bb03f5eb968a" type="function"/>
+    <keyword type="struct" name="xmlpp::Validator" link="classxmlpp_1_1Validator.html"/>
+    <keyword name="xmlpp::Validator::Validator" link="classxmlpp_1_1Validator.html#a42f0fa04127e0cdc11f30d1e18ae2e25" type="function"/>
+    <keyword name="xmlpp::Validator::~Validator" link="classxmlpp_1_1Validator.html#a436707ae4c543734a55d7dde76679406" type="function"/>
+    <keyword name="xmlpp::Validator::operator bool" link="classxmlpp_1_1Validator.html#ae777b2da3eb2b5cdeaba5c56cec805b3" type="function"/>
+    <keyword name="xmlpp::Validator::parse_file" link="classxmlpp_1_1Validator.html#a6f70e49bc8b3e601415687f47806e3c4" type="function"/>
+    <keyword name="xmlpp::Validator::parse_memory" link="classxmlpp_1_1Validator.html#ad459dd6c37298cfedf2decb0a64daf69" type="function"/>
+    <keyword name="xmlpp::Validator::validate" link="classxmlpp_1_1Validator.html#abdd0a5a550d904f182df0f8feaa0b6c5" type="function"/>
+    <keyword name="xmlpp::Validator::check_for_exception" link="classxmlpp_1_1Validator.html#a2af695894f22e61b4f85551edefd104d" type="function"/>
+    <keyword name="xmlpp::Validator::check_for_validity_messages" link="classxmlpp_1_1Validator.html#a655f06aa683577c26dcb2edba2e9e84b" type="function"/>
+    <keyword name="xmlpp::Validator::handle_exception" link="classxmlpp_1_1Validator.html#a04bc606bd3f9ba04046b4ba1748707ec" type="function"/>
+    <keyword name="xmlpp::Validator::initialize_context" link="classxmlpp_1_1Validator.html#af87d8f566d05fa7a74b8e28d84d26504" type="function"/>
+    <keyword name="xmlpp::Validator::on_validity_error" link="classxmlpp_1_1Validator.html#ac922274a8deb57c437289203cf7110de" type="function"/>
+    <keyword name="xmlpp::Validator::on_validity_warning" link="classxmlpp_1_1Validator.html#a9f860b3afd1445e53cd0da5c707c0978" type="function"/>
+    <keyword name="xmlpp::Validator::release_underlying" link="classxmlpp_1_1Validator.html#a317466ca90b8e53d6f57e49fd032d8cb" type="function"/>
+    <keyword name="xmlpp::Validator::callback_validity_error" link="classxmlpp_1_1Validator.html#a616cad28f3d4f59b76edb916bffeb6ef" type="function"/>
+    <keyword name="xmlpp::Validator::callback_validity_warning" link="classxmlpp_1_1Validator.html#a5f8938e79ca2c52ec26e499b356985a0" type="function"/>
+    <keyword type="struct" name="xmlpp::validity_error" link="classxmlpp_1_1validity__error.html"/>
+    <keyword name="xmlpp::validity_error::validity_error" link="classxmlpp_1_1validity__error.html#a26239e32df291bde8e7f3a77c81ba49f" type="function"/>
+    <keyword name="xmlpp::validity_error::~validity_error" link="classxmlpp_1_1validity__error.html#ac09d93f63ad77986b0e3b2699b17bef2" type="function"/>
+    <keyword name="xmlpp::validity_error::clone" link="classxmlpp_1_1validity__error.html#abaf941b5118c87afa10bf366376ac012" type="function"/>
+    <keyword name="xmlpp::validity_error::raise" link="classxmlpp_1_1validity__error.html#aef3fc5567fcaca8a7525cb53ef87e5eb" type="function"/>
+    <keyword type="struct" name="xmlpp::XIncludeEnd" link="classxmlpp_1_1XIncludeEnd.html"/>
+    <keyword name="xmlpp::XIncludeEnd::XIncludeEnd" link="classxmlpp_1_1XIncludeEnd.html#aeb57498d5214181abcacab56cfed755e" type="function"/>
+    <keyword name="xmlpp::XIncludeEnd::~XIncludeEnd" link="classxmlpp_1_1XIncludeEnd.html#a486cd92ce35854bd2c805a7d018aa5e0" type="function"/>
+    <keyword type="struct" name="xmlpp::XIncludeStart" link="classxmlpp_1_1XIncludeStart.html"/>
+    <keyword name="xmlpp::XIncludeStart::XIncludeStart" link="classxmlpp_1_1XIncludeStart.html#abfcc32038a382e2ae51782adbdab0937" type="function"/>
+    <keyword name="xmlpp::XIncludeStart::~XIncludeStart" link="classxmlpp_1_1XIncludeStart.html#a3cf0b8bd890b1e38ff8dd07a74c29e71" type="function"/>
+    <keyword type="struct" name="xmlpp::XsdSchema" link="classxmlpp_1_1XsdSchema.html"/>
+    <keyword name="xmlpp::XsdSchema::XsdSchema" link="classxmlpp_1_1XsdSchema.html#a035f00299cf7cfbea27666e557af6550" type="function"/>
+    <keyword name="xmlpp::XsdSchema::XsdSchema" link="classxmlpp_1_1XsdSchema.html#a0faad7e2f82b6da8bed55dba5d7f7768" type="function"/>
+    <keyword name="xmlpp::XsdSchema::XsdSchema" link="classxmlpp_1_1XsdSchema.html#ac6c1147eb5662184a7e006474e72047a" type="function"/>
+    <keyword name="xmlpp::XsdSchema::XsdSchema" link="classxmlpp_1_1XsdSchema.html#acdb94b24fe7656b80454e47f7fefb3a6" type="function"/>
+    <keyword name="xmlpp::XsdSchema::~XsdSchema" link="classxmlpp_1_1XsdSchema.html#a884be0c4ce32d42610efba72f85b6088" type="function"/>
+    <keyword name="xmlpp::XsdSchema::cobj" link="classxmlpp_1_1XsdSchema.html#acb0c4a77fc8064ef31a81a4c1651e9c6" type="function"/>
+    <keyword name="xmlpp::XsdSchema::cobj" link="classxmlpp_1_1XsdSchema.html#ab706cccce9273d7857e4a19c81e1f461" type="function"/>
+    <keyword name="xmlpp::XsdSchema::parse_document" link="classxmlpp_1_1XsdSchema.html#a74f5df9da50373456ccd84eb712fb147" type="function"/>
+    <keyword name="xmlpp::XsdSchema::parse_file" link="classxmlpp_1_1XsdSchema.html#a04a87c2dbf68107e2ae3d7fa10260ece" type="function"/>
+    <keyword name="xmlpp::XsdSchema::parse_memory" link="classxmlpp_1_1XsdSchema.html#aa8251896b25a8009694ea6fbca562d93" type="function"/>
+    <keyword name="xmlpp::XsdSchema::parse_context" link="classxmlpp_1_1XsdSchema.html#a6a3808a8a7f076b88aba6720294d73c4" type="function"/>
+    <keyword name="xmlpp::XsdSchema::release_underlying" link="classxmlpp_1_1XsdSchema.html#a88b15539c14098238ea132c574d72822" type="function"/>
+    <keyword type="struct" name="xmlpp::XsdValidator" link="classxmlpp_1_1XsdValidator.html"/>
+    <keyword name="xmlpp::XsdValidator::XsdValidator" link="classxmlpp_1_1XsdValidator.html#aaa10c2cb2f85be4db20502f08714b1d7" type="function"/>
+    <keyword name="xmlpp::XsdValidator::XsdValidator" link="classxmlpp_1_1XsdValidator.html#ab605a18349285f8fb899d6da9e9c3119" type="function"/>
+    <keyword name="xmlpp::XsdValidator::XsdValidator" link="classxmlpp_1_1XsdValidator.html#a7ed47d094441e0f4b88b59fb098f8554" type="function"/>
+    <keyword name="xmlpp::XsdValidator::XsdValidator" link="classxmlpp_1_1XsdValidator.html#ade4cfe48da232b95bd8aded90f2bb2db" type="function"/>
+    <keyword name="xmlpp::XsdValidator::~XsdValidator" link="classxmlpp_1_1XsdValidator.html#afae5c5a5c861fc31a8f8eb17c47c2e32" type="function"/>
+    <keyword name="xmlpp::XsdValidator::get_schema" link="classxmlpp_1_1XsdValidator.html#a985e0b690d3cd0c9f9143793e1a63b65" type="function"/>
+    <keyword name="xmlpp::XsdValidator::get_schema" link="classxmlpp_1_1XsdValidator.html#a5af3b2cb62c47596ad20561925d1aa2c" type="function"/>
+    <keyword name="xmlpp::XsdValidator::operator bool" link="classxmlpp_1_1XsdValidator.html#ac805054801867bc65fc4f34272fb444c" type="function"/>
+    <keyword name="xmlpp::XsdValidator::parse_document" link="classxmlpp_1_1XsdValidator.html#ab0d4b633b483f7a93b694a194b04aa3c" type="function"/>
+    <keyword name="xmlpp::XsdValidator::parse_file" link="classxmlpp_1_1XsdValidator.html#ad62c0a55e7c5209ff3d7babfadc5ba5a" type="function"/>
+    <keyword name="xmlpp::XsdValidator::parse_memory" link="classxmlpp_1_1XsdValidator.html#a8cba84f1799f12b44c5e7c8ef34af8c6" type="function"/>
+    <keyword name="xmlpp::XsdValidator::set_schema" link="classxmlpp_1_1XsdValidator.html#a5bb64c998b666b233aa4a405f9913b9a" type="function"/>
+    <keyword name="xmlpp::XsdValidator::validate" link="classxmlpp_1_1XsdValidator.html#a3e53d5aef843b7a03676dc9da353963f" type="function"/>
+    <keyword name="xmlpp::XsdValidator::validate" link="classxmlpp_1_1XsdValidator.html#a87234681b2e53562e3450590061db17f" type="function"/>
+    <keyword name="xmlpp::XsdValidator::initialize_context" link="classxmlpp_1_1XsdValidator.html#a5badc949462f73d757d76538550a1f52" type="function"/>
+    <keyword name="xmlpp::XsdValidator::release_underlying" link="classxmlpp_1_1XsdValidator.html#ad1fd16066f28b3685c12412ee94c5f60" type="function"/>
+    <keyword name="xmlpp::ustring" link="namespacexmlpp.html#a8cc9953d3fefa9134f2ba9a3b2ca1abe" type="typedef"/>
+    <keyword name="xmlpp::XmlEntityType" link="namespacexmlpp.html#a0fa47f0fb103cf9ea460a2fef3f5be49" type="enum"/>
+    <keyword name="xmlpp::XPathResultType" link="namespacexmlpp.html#ac91075edf569a213343d7d13ae4be3c8" type="enum"/>
+    <keyword name="xmlpp::format_printf_message" link="namespacexmlpp.html#a507b8ef461b52eb4aa4ef004d9bf32ad" type="function"/>
+    <keyword name="xmlpp::format_xml_error" link="namespacexmlpp.html#a9adaa107261ee516f240c224b8485cb9" type="function"/>
+    <keyword name="xmlpp::format_xml_parser_error" link="namespacexmlpp.html#a941ad8358942d82a73a26e7948acdd55" type="function"/>
+    <keyword name="xmlpp::operator&gt;&gt;" link="namespacexmlpp.html#ac376e76a711973f9aa23c0dc68fdc301" type="function"/>
+  </functions>
+</book>

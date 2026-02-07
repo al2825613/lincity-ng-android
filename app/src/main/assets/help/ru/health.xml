@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE!! IT WAS GENERATED AUTOMATICALLY! (you must edit files in help_template directory) -->
+<Document style="helpdocument">
+	<p style="htitle">Больница</p>
+	<p style="hp">Больница обеспечивает потребности населения в медицинской помощи в радиусе четырёх участков.</p>
+	<p style="hp">Больница помогает людям жить дольше, люди начинают меньше умирать из-за болезней, вызванных загрязнениями, и более производительно работать (они проводят меньше времени на больничном).</p>
+	<p style="hp">Больницы очень дорогие. Однако они понижают затраты на неестественные смерти (погибшие) и могут приносить дополнительную прибыль от налогов.</p>
+	<p style="hp">Больницы начинают работать через три месяца после постройки. Для их работы требуются товары.</p>
+	<p style="hp">Больницу нужно соединять с транспортной системой, если она не находится в зоне действия магазина.</p>
+	<p style="hp">Область действия больницы Вы можете увидеть, нажав на миникарте соответствующую кнопку.</p>
+
+  <p style="hp">Это больница:</p>
+   <img src="images/tiles/health.png" halign="center"/>
+
+  <p style="hp">это его иконка:</p>
+   <img src="images/gui/buttonpanel/misc/health.png" halign="center"/>
+
+  <p style="hp">это иконка на миникарте:</p>
+   <img src="images/gui/mapview/roundbuttons/round_health.png" halign="center"/>
+
+  <p style="hsubtitle">См. ещё:</p>
+	<li><a href="residential">Жилой дом</a></li>
+	<li><a href="pollution">Загрязнение</a></li>
+	<li><a href="labor">Рабочие</a></li>
+	<li><a href="goods">Товары</a></li>
+	<li><a href="transport">Транспортная система</a></li>
+	<li><a href="msb-health">Зоны доступа к больницам</a></li>
+</Document>

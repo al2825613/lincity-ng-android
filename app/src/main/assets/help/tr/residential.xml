@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<Document style="helpdocument">
+	<p style="htitle">Yerleşim alanı</p>
+	<p style="hp">İnsanların yaşadığı yerdir. İnsanların buralarda yaşamalarının teşviki için doymuş olmaları gerekir (su kuyusu ve yiyecek için bakkal kapsama alanı veya yol bağlantısı). Ayrıca çalışmaları ve eşya almaları için de yardımcı olacaktır. Bir Bakkalın kapsama alanında veya ulaşıma bağlanmış olmalılar (birçok yapı gibi).</p>
+	<p style="hp">3 farklı çeşit yerleşim alanı vardır: Düşük, Orta ve Yüksek yoğunluklu evler. Her biri ile lişkilendirilmiş farklı doğum ve ölüm oranları vardır. Bu, nüfusunuzu kontrol etmeniz için biraz yetki verir.</p>
+	<p style="hp">İleride, eğer yeterli teknolojiniz varsa, kule halindeki büyük binalar gibi daha gelişmiş evler yapabilirsiniz.</p>
+
+	<p style="hp">Bu düşük yoğunluklu bir ev (yüksek teknoloji)</p>
+	<img src="images/tiles/reslowhi.png" halign="center"/>
+	<p style="hp">ve bu da simgesi</p>
+	<img src="images/gui/buttonpanel/residence/residence-hightec-lo.png" halign="center"/>
+	<p style="hp">Bu orta yoğunlukta bir ev (yüksek teknoloji)</p>
+	<img src="images/tiles/resmedhi.png" halign="center"/>
+	<p style="hp">ve bu da simgesi</p>
+	<img src="images/gui/buttonpanel/residence/residence-hightec-med.png" halign="center"/>
+	<p style="hp">Bu yüksek yoğunluklu bir ev (yüksek teknoloji)</p>
+	<img src="images/tiles/reshihi.png" halign="center"/>
+	<p style="hp">ve bu da simgesi</p>
+	<img src="images/gui/buttonpanel/residence/residence-hightec-high.png" halign="center"/>
+
+	<p style="hsubtitle">Ayrıca bakınız:</p>
+	<li><a href="market">Bakkal</a></li>
+	<li><a href="transport">Ulaşım</a></li>
+        <li><a href="waterwell">Su kuyusu</a></li>
+</Document>
+

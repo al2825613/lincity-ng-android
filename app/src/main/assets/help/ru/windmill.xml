@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE!! IT WAS GENERATED AUTOMATICALLY! (you must edit files in help_template directory) -->
+<Document style="helpdocument">
+	<p style="htitle">Ветрогенератор</p>
+	<p style="hp">Деревянные ветрогенераторы обеспечивают электричеством жилые дома (они становятся более привлекательными для жителей) и фермы (они становятся более эффективными).</p>
+	<p style="hp">Люди, живущие в домах с электричеством, потребляют больше товаров.</p>
+	<p style="hp">Ветрогенератору нужны рабочие. Чем меньше рабочей силы, тем менее эффективнее он работает.</p>
+
+  <p style="hp">Существует два вида ветрогенераторов:</p>
+   <img src="images/gui/buttonpanel/power/windmills.png" halign="center"/>
+
+  <p style="hp">Это низкотехнологичный деревянный ветрогенератор, он производит кВт⋅ч для соседних зданий:</p>
+   <img src="images/tiles/windmill1w.png" halign="center"/>
+
+  <p style="hp">Это модернизированный ветрогенератор, он производит МВт⋅ч для снабжения города электричеством:</p>
+   <img src="images/tiles/windmill1g.png" halign="center"/>
+	<p style="hp">Тип ветрогенератора, которую Вы строите, зависит от текущего уровня технологического развития.</p>
+
+  <p style="hsubtitle">См. ещё:</p>
+	<li><a href="power">Энергия</a></li>
+	<li><a href="substation">Подстанция</a></li>
+	<li><a href="powerline">ЛЭП</a></li>
+	<li><a href="tech-level">Уровень технологического развития</a></li>
+	<li><a href="msb-power">Зоны электроснабжения</a></li>
+	<li><a href="powerscoal">Угольная электростанция</a></li>
+	<li><a href="powerssolar">Солнечная электростанция</a></li>
+</Document>

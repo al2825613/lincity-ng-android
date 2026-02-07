@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE!! IT WAS GENERATED AUTOMATICALLY! (you must edit files in help_template directory) -->
+<Document style="helpdocument">
+	<p style="htitle">Подстанция</p>
+	<p style="hp">Подстанции получают электричество с помощью ЛЭП и распределяют его по округе. Зоны энергетики позволяют увидеть, каким областям требуется больше энергии. Для своего функционирования подстанциям не требуются рабочие.</p>
+
+  <p style="hp">Это подстанция:</p>
+   <img src="images/tiles/substation-G.png" halign="center"/>
+
+  <p style="hp">а это иконка:</p>
+   <img src="images/gui/buttonpanel/power/substation.png" halign="center"/>
+
+  <p style="hsubtitle">См. ещё:</p>
+	<li><a href="msb-power">Зоны электроснабжения</a></li>
+	<li><a href="power">Энергия</a></li>
+	<li><a href="powerline">ЛЭП</a></li>
+	<li><a href="windmill">Ветрогенератор</a></li>
+	<li><a href="powerscoal">Угольная электростанция</a></li>
+	<li><a href="powerssolar">Солнечная электростанция</a></li>
+</Document>

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE!! IT WAS GENERATED AUTOMATICALLY! (you must edit files in help_template directory) -->
+<Document style="helpdocument">
+	<p style="htitle">Residential area</p>
+	<p style="hp">This is where people live. To encourage people to live in this area they must have water and food. It also helps to provide them workplaces, electricity and goods. They must be connected to transport. Being in range of a market is beneficial. Sports fields increase desirability. Keep your people away from pollution</p>
+	<p style="hp">If residents have insufficient food or water or the area is very polluted, then they will die. When residents are dying, the residence is given a very low desirability score, so people are discouraged from moving in, and people may even move out.</p>
+	<p style="hp">There are 3 different types of residential areas: Low, Medium and High density housing. These have different birth and death rates associated with them. This gives you some control over your population. Health centers also affect birth and death rates.</p>
+	<p style="hp">Later in the game, if you have sufficient technology, you can build more 'modern' housing, even tower blocks.</p>
+
+  <p style="hp">This is a low density housing (hightech)</p>
+   <img src="images/tiles/reslowhi.png" halign="center"/>
+
+  <p style="hp">and this is its icon</p>
+   <img src="images/gui/buttonpanel/residence/residence-hightec-lo.png" halign="center"/>
+
+  <p style="hp">This is a medium density housing (hightech)</p>
+   <img src="images/tiles/resmedhi.png" halign="center"/>
+
+  <p style="hp">and this is its icon</p>
+   <img src="images/gui/buttonpanel/residence/residence-hightec-med.png" halign="center"/>
+
+  <p style="hp">This is a high density housing (hightech)</p>
+   <img src="images/tiles/reshihi.png" halign="center"/>
+
+  <p style="hp">and this is its icon</p>
+   <img src="images/gui/buttonpanel/residence/residence-hightec-high.png" halign="center"/>
+
+	<p style="hsubtitle">Formulas</p>
+	<p style="hp">don't starve: (1 food + 1 water =&gt; 0) * pop</p>
+	<p style="hp">power: 30 lo-volt + 3 lo-volt * pop =&gt; 0</p>
+	<p style="hp">employment: (0 =&gt; .69 labor + swing) * pop (with health and sports cover)</p>
+	<p style="hp">swing = .05 * remaining labor inventory capacity fraction (with health and sports cover)</p>
+	<p style="hp">goods: (.25 goods =&gt; .0833 waste) * pop (only if employed)</p>
+	<p style="hp">extra power: (.5 lo-volt =&gt; 0) * pop (only if using goods)</p>
+	<p style="hp">extra goods: (.25 goods =&gt; .0833 waste) * pop (only if using extra power)</p>
+
+  <p style="hsubtitle">See also:</p>
+	<li><a href="market">Market</a></li>
+	<li><a href="transport">Transport</a></li>
+	<li><a href="waterwell">Water well</a></li>
+	<li><a href="pollution">Pollution</a></li>
+	<li><a href="farm">Farms</a></li>
+	<li><a href="commodities">Commodities</a></li>
+	<li><a href="health">Health Centre</a></li>
+	<li><a href="cricket">Basketball courts</a></li>
+</Document>

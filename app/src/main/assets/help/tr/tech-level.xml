@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<Document style="helpdocument">
+	<p style="htitle">Teknoloji seviyesi</p>
+	<p style="hp">Şehrinin teknoloji seviyesi, kesin işlemlerin verimliliğini ve yapabileceğiniz yapıların miktarını belirtir.</p>
+	<p style="hp">Teknolojinizi arttırmak için, anıtlar, okullar ve üniversiteler yapmalı ve uygun olan girdileri sağlamalısınız.</p>
+	<p style="hp">Teknoloji seviyeniz çok düşük olduğunda sadece anıt yapabilirsiniz. Çevrede bir kaç tane yaptıktan sonra, okulları 'icat' edeceksiniz. Okullar, anıtlardan daha fazla teknoloji sağlar.</p>
+	<p style="hp">Teknoloji seviyeniz yüksek bir düzeye ulaştığında ise Üniversiteleri 'icat' edeceksiniz. Bunlar, okullardan daha fazla teknoloji sağlar, fakat <b> çok </b> kaynak tüketirler.</p>
+	<p style="hp">Sahip olduğunuz daha fazla teknoloji, daha çok <i>aşınmaya</i> sebep olacaktır. Bu, daha yüksek seviye için daha çok okul ve üniversitenizin olması gerektiği anlamına gelir.</p>
+	<p style="hp">Dikkat etmeniz gereken başka bir nokta da, bir veya iki üniversiteyi çıkarmanız gerekirse (veya aniden kaynak açlığı çekerlerse) bu, teknoloji seviyenizin <b> düşüş </b> sebebi olabilir.</p>
+	<p style="hp">Başarılı Füze fırlatmaları teknoloji seviyenizle orantılıdır.</p>
+
+	<p style="hsubtitle">Ayrıca bakınız:</p>
+	<li><a href="monument">Anıtlar</a></li>
+	<li><a href="school">Okullar</a></li>
+	<li><a href="university">Üniversiteler</a></li>
+	<li><a href="rocket">Füze rampaları</a></li>
+</Document>

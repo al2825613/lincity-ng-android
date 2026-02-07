@@ -1,0 +1,5 @@
+<map id="xmlpp::Element" name="xmlpp::Element">
+<area shape="rect" id="node1" title="Element nodes have attributes as well as child nodes." alt="" coords="22,155,147,181"/>
+<area shape="rect" id="node2" href="$classxmlpp_1_1Node.html" title="Represents XML Nodes." alt="" coords="32,80,137,107"/>
+<area shape="rect" id="node3" href="$classxmlpp_1_1NonCopyable.html" title="A base for classes which cannot be copied or moved." alt="" coords="5,5,164,32"/>
+</map>

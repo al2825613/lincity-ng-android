@@ -1,0 +1,5 @@
+<map id="xmlpp::RelaxNGSchema" name="xmlpp::RelaxNGSchema">
+<area shape="rect" id="node1" title="Represents a RelaxNG schema for validating XML files." alt="" coords="5,155,185,181"/>
+<area shape="rect" id="node2" href="$classxmlpp_1_1SchemaBase.html" title="Base class for schemas, used for validation of XML files." alt="" coords="18,80,173,107"/>
+<area shape="rect" id="node3" href="$classxmlpp_1_1NonCopyable.html" title="A base for classes which cannot be copied or moved." alt="" coords="16,5,175,32"/>
+</map>

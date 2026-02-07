@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<Document style="helpdocument">
+	<p style="htitle">Kirlilik</p>
+	<p style="hp">Çoğu bölge bir miktar kirliliğe sebep olur. Şiddetli kirliliğe sebep olan bölgeler:</p>
+	<li>Ağır sanayi.</li>
+	<li>Hafif sanayi.</li>
+	<li>Termik santraller.</li>
+	<li>Kömür madenleri.</li>
+	<li>Döküntüyle dolmuş Bakkallar.</li>
+	<li>Özellikle döküntüyle dolduklarında Yollar ve demiryolları.</li>
+	<p style="hp">İnsanlar kirli yerlerde yaşamayı sevmez. Hastalık ve ölüm geldiğinde oradan çıkacaklardır.</p>
+	<p style="hp">Güneybatıdan gelen rüzgar en sık esendir. Bu durum kirliliğin kuzeydoğuya kaymasına sebep olur.</p>
+	<p style="hp">İnsanları kirliliğe maruz bırakmamak için genellikle taktiksel olarak yapılanmak isteyebilirsiniz, fakat her zaman mümkün olmaz. Böyle bir durumda, Parklar güzel bir engeldir. Daha fazla Park, daha fazla korumadır.</p>
+
+	<p style="hsubtitle">Ayrıca bakınız:</p>
+	<li><a href="industryh">Ağır sanayi</a></li>
+	<li><a href="industryl">Hafif sanayi</a></li>
+	<li><a href="powerscoal">Termik Santral</a></li>
+	<li><a href="coalmine">Kömür madenleri</a></li>
+	<li><a href="market">Bakkallar</a></li>
+	<li><a href="rail">Demiryolları</a></li>
+	<li><a href="road">Yollar</a></li>
+	<li><a href="park">Park</a></li>
+	<li><a href="msb-pol">Kirlilik örtüsü</a></li>
+</Document>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE!! IT WAS GENERATED AUTOMATICALLY! (you must edit files in help_template directory) -->
+<Document style="helpdocument">
+	<p style="htitle">Опустошение</p>
+	<p style="hp">Для опустошения строений нажмите кнопку опустошения и выберите желаемые постройки с товарами потребления. Опустошение производится бесплатно, все товары перемещаются в близлежащие магазины и на дорогу.</p>
+	<p style="hp">Последствия опустошения могут быть опасными (от остановки производства до обречения жителей на голодную смерть).</p>
+	<p style="hp">Некоторые строения, такие как дороги, рельсы, свалки и другие, нельзя опустошить.</p>
+	<p style="hp">Истощённые рудники и угольные шахты перед разрушением опустошаются автоматически.</p>
+
+  <p style="hp">Это кнопка опустошения:</p>
+   <img src="images/gui/buttonpanel/base/broom.png" halign="center"/>
+
+  <p style="hsubtitle">См. ещё:</p>
+	<li><a href="bulldoze">Бульдозер</a></li>
+</Document>

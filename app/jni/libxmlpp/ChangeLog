@@ -1,0 +1,1429 @@
+2023-03-22  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  5.0.3
+
+2023-03-22  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Doxyfile.in: LIBXMLXX_API -> LIBXMLPP_API
+
+2023-03-20  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  meson.build: Simplify if-file-exists test
+
+  and use meson.project_[build,source]_root(), new in meson 0.56.0.
+
+2023-03-20  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  README.md, CI: meson -> meson setup
+
+2023-01-04  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  meson.build: Simplify lookup of python command
+
+  See libsigcplusplus PR#83
+
+2023-01-04  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  meson.build: Fix the evaluation of is_git_build on Windows
+
+  See gtkmm#131
+
+2023-01-04  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Meson build: Don't copy files with configure_file()
+
+  It's deprecated since Meson 0.64. The replacement, fs.copyfile(),
+  is not useful here. It only copies from the source directory to
+  the build directory.
+
+2022-12-18  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  CI: Add publish-docs.yml
+
+2022-12-17  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  CI: Remove obsolete autotools tests
+
+2022-10-25  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  docs/index.md: Change libxmlplusplus-list to Discourse
+
+  The libxmlplusplus-list will soon be closed for new contributions.
+
+2022-10-24  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Add mingw-cross-file.txt
+
+  Useful when cross-building from Linux to Windows with MinGW.
+
+2022-10-21  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  libxml++config.h.[in|meson]: Try again to fix MinGW builds
+
+  Apparently it's not enough to decorate a class with
+  __attribute__((visibility("default"))), so also decorate it with
+  __declspec(dllexport), via macros as needed.
+  
+  Pointed out by Kjell in PR #46.
+
+2022-10-21  fanc999  <fanc999@yahoo.com.tw>
+
+  headers: Drop LIBXMLPP_API from 'friend' members (#47)
+
+  They aren't really necessary and can raise warnings on Windows MinGW
+  builds unless their locations were exchanged with 'class' or 'struct',
+  but doing so is not liked by Visual Studio.
+2022-10-21  fanc999  <fanc999@yahoo.com.tw>
+
+  exceptions/exception.h: Try fixing linking on MinGW (#46)
+
+  Using the xmlpp::exception class may lead to a linker error on its
+  vtable on MinGW, unless the whole class is exported, but we also want to
+  avoid exporting that whole class under Visual Studio, so that we can
+  avoid having the built DLL/import library being tied to a particular STL
+  version, so define macros to accomdate such situations and apply it to
+  the xmlpp::exception class.
+  
+  This should not affect the ABI stability on Visual Studio builds.
+  
+  Fixes: https://github.com/libxmlplusplus/libxmlplusplus/issues/45
+2022-09-28  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  meson.build: Detect if we build from a git subtree
+
+  See https://gitlab.gnome.org/GNOME/gtkmm/-/merge_requests/72
+
+2022-09-14  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Convert README to README.md
+
+  * README -> README.md
+  * Makefile.am: Distribute README.md
+  * configure.ac: Set `foreign` option to automake.
+  Without the `foreign` option, old versions of automake require
+  a README file, which no longer exists. New versions (like 1.16.5)
+  without the `foreign` option require README or README.md.
+
+2022-09-09  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  5.0.2
+
+2022-09-09  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Makefile.am: Distribute subprojects/libxml2_cmake.wrap
+
+2022-09-06  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  DomParser, SaxParser: Move anonymous namespace out of namespace xmlpp
+
+2022-08-17  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  MSVC_NMake/README: Document dependency placement
+
+  ... so that it is easier for people to build libxml++ with less need to
+  tinker with the build files or the %INCLUDE% and %LIB% envvars.
+
+2022-08-16  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  NMake Makefiles: Make things more configurable
+
+  Add the INCLUDEDIR and LIBDIR options, so that we can set where we find
+  dependent headers and libraries, if they are not in %INCLUDE% and/or %LIB%
+  and are not in $(PREFIX)\include and $(PREFIX)\lib.
+  
+  Also mention about the PREFIX and PERL options, so that one can use them when
+  necessary.
+
+2022-08-16  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  NMake Makefiles: Remove dependency on msvc_recommended_pragmas.h
+
+  We don't depend on glibmm for libxml++-5.x, so drop the forced include.  Mishap
+  when migrating the NMake Makefiles for libxml++-4.x, which does depend on
+  glibmm.
+
+2022-07-09  Rosen Penev  <rosenp@gmail.com>
+
+  clang-tidy: use auto
+
+  Found with modernize-use-auto
+  
+  Signed-off-by: Rosen Penev <rosenp@gmail.com>
+
+2022-07-06  Rosen Penev  <rosenp@gmail.com>
+
+  clang-tidy: use C++ headers
+
+  Found with modernize-deprecated-headers
+  
+  Signed-off-by: Rosen Penev <rosenp@gmail.com>
+
+2022-07-06  Rosen Penev  <rosenp@gmail.com>
+
+  clang-tidy: add missing move
+
+  avoids copying
+  
+  Signed-off-by: Rosen Penev <rosenp@gmail.com>
+
+2022-07-05  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  tests/istream_ioparser/main.cc: Replace final by override
+
+  gcc 8 does not understand that final implies override.
+
+2022-07-05  Rosen Penev  <rosenp@gmail.com>
+
+  clang-tidy: use override
+
+  Found with modernize-use-override
+  
+  Signed-off-by: Rosen Penev <rosenp@gmail.com>
+
+2022-07-05  Rosen Penev  <rosenp@gmail.com>
+
+  clang-tidy: replace throw() with noexcept
+
+  Found with modernize-use-noexcept
+  
+  Signed-off-by: Rosen Penev <rosenp@gmail.com>
+
+2022-07-05  Rosen Penev  <rosenp@gmail.com>
+
+  clang-tidy: use range loops
+
+  Found with modernize-loop-convert
+  
+  Signed-off-by: Rosen Penev <rosenp@gmail.com>
+
+2022-07-05  Rosen Penev  <rosenp@gmail.com>
+
+  clang-tidy: remove pessimising const
+
+  Found with performance-no-automatic-move
+  
+  Signed-off-by: Rosen Penev <rosenp@gmail.com>
+
+2022-07-05  Rosen Penev  <rosenp@gmail.com>
+
+  clang-tidy: make deleted functions public
+
+  Found with modernize-use-equals-delete
+  
+  Signed-off-by: Rosen Penev <rosenp@gmail.com>
+
+2022-07-05  Rosen Penev  <rosenp@gmail.com>
+
+  clang-tidy: use make_unique
+
+  Found with modernize-make-unique
+  
+  Signed-off-by: Rosen Penev <rosenp@gmail.com>
+
+2022-06-28  Andrew Potter  <agpotter@gmail.com>
+
+  github: add windows workflow
+
+2022-06-27  Andrew Potter  <agpotter@gmail.com>
+
+  meson: Clear CMAKE C FLAGS for subproject
+
+2022-06-27  Andrew Potter  <agpotter@gmail.com>
+
+  meson: Don't override meson's cpp_eh option
+
+  From meson 0.51.0, cpp_eh defaults to /EHsc on windows. Passing it to
+  add_program_arguments() means downstream projects using cpp_eh=a will get
+  warnings.
+
+2022-06-27  Andrew Potter  <agpotter@gmail.com>
+
+  meson: Add libxml2 cmake wrap
+
+2022-06-23  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  istream_ioparser test: Include algorithm header
+
+  Some Visual Studio releases require it to be included to use std::min().
+
+2022-06-23  Andrew Potter  <agpotter@gmail.com>
+
+  meson: no _WINDLL when static
+
+2022-06-23  Andrew Potter  <agpotter@gmail.com>
+
+  meson: enable static building on windows
+
+2022-06-16  Andrew Potter  <agpotter@gmail.com>
+
+  Add test to autotools build
+
+2022-06-16  Andrew Potter  <agpotter@gmail.com>
+
+  parsers: Avoid std::getline for istream inputs
+
+  For streambuf implementations that can't set a public get area, getline falls
+  back to a character-by-character implementation. Instead we can pass the stream
+  to xmlCreateIOParserCtxt(). This simplifies the parse stream methods and brings
+  them nearly identical to the other parse methods.
+
+2022-05-24  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  Meson: Compensate for the lack of msvc_recommended_pragmas.h
+
+  libxml++-5.x and later no longer depends on glibmm (hence GLib), so
+  msvc_recommended_pragmas.h may not be available.  If it isn't, disable warnings
+  C4244 and C4101 to compensate for it.
+
+2022-05-24  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  Meson/MSVC: Ignore warning C4706
+
+  ... which means "assignment within conditional expression".  We don't really
+  need to worry too much about this warning here.
+
+2022-05-24  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  meson/MSVC: Re-organize warning-related compiler flags
+
+  Add a short description for each of the warning-related compiler flags that we
+  apply globally.
+  
+  Also, apply '/wd4267' only when we are building a 64-bit build, as that warning
+  should only be related to 64-bit builds.
+
+2022-05-23  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  Meson: Some minor cleanups
+
+  We don't actually need to check for the /wd4828 compiler flag here, so stop
+  checking for that.
+  
+  Move the '/utf-8' compiler flag check to be together with the other warning-
+  related compiler flag checks.
+
+2022-05-06  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  docs/manual: Sort example file lists
+
+  so that docs/manual/libxml++.xml builds in a reproducible way. See
+  https://gitlab.gnome.org/GNOME/gtkmm-documentation/-/merge_requests/15
+  by Bernhard M. Wiedemann.
+
+2022-05-02  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  meson.build: Avoid configuration warnings
+
+2022-04-30  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  meson.build: Add a necessary comma
+
+2022-04-30  Rosen Penev  <rosenp@gmail.com>
+
+  remove min warning level
+
+  This can be done using warning_level=1. Fixes meson warning.
+2022-03-31  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  libxml++/libxml++.h: Update the link to the tutorial
+
+2022-02-13  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  meson.build: Specify 'check' option in run_command()
+
+  The default value will be changed in future Meson releases.
+  
+  Don't use deprecated python3.path() and execute(..., gui_app: ...).
+  Let import('python').find_installation() always find the python
+  installation used to run Meson.
+  Don't distribute .github/.
+
+2022-01-09  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  CI: Install docbook-xsl
+
+  If docbook-xsl is installed, the xsltproc command reads stylesheets
+  from local files instead of from http://docbook.sourceforge.net.
+  Faster and safer. Reading from docbook.sourceforge.net sometimes fails.
+
+2021-11-10  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  build: Support Visual Studio 2022
+
+  Make these builds distinct from Visual Studio 2019 builds.
+
+2021-11-10  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  Win32: Don't include afxres.h in resources
+
+  We can save people from a large download and a large disk footprint for the
+  MFC/ATL items as those items are only optionally installed for later
+  (2017+) Visual Studio versions, by including winresrc.h instead, which
+  is always present in a Visual Studio installation.
+
+2021-10-14  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  docs/index.md: Update links on the web site
+
+2021-09-27  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  docs/manual, Meson config: Check if xmllint can be used
+
+2021-09-24  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  CI, Meson build: Install packages for validating XML file
+
+  libxml2-utils and docbook5-xml are necessary in order to validate
+  the XML file in docs/manual/.
+
+2021-09-19  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  docs/manual: Upgrade from DocBook 4.1 to DocBook 5.0
+
+2021-08-29  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  CI: Add builds with Meson, remove some old Autotools builds
+
+2021-08-18  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  meson.build: Check if Perl is required for building documentation
+
+  New versions of mm-common use the Python scripts doc_postprocess.py
+  and doc_install.py instead of the Perl scripts doc-postprocess.pl and
+  doc-install.pl when documentation is built.
+
+2021-07-16  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  insert-example-code.py: Specify file encoding
+
+  The default file encoding is platform dependent in Python.
+  Better tell which encoding is expected.
+
+2021-07-02  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  docs/manual/libxml++_without_code.xml: Add id on <sect1> elements
+
+2021-07-02  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  docs/reference/Doxyfile.in: Remove obsolete COLS_IN_ALPHA_INDEX
+
+2021-07-02  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Meson build: Add insert_example_code.py
+
+  * docs/manual/insert_example_code.py: New Python file, equivalent to
+  the insert_example_code.pl Perl file.
+  
+  The Perl file is still used when building with Autotools.
+
+2021-06-09  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Document, Node: Recognize HTML documents
+
+  Documents created with htmlReadDoc() have xmlElementType ==
+  XML_HTML_DOCUMENT_NODE. Handle that type like the XML_DOCUMENT_NODE
+  type. htmlDoc* is an alias for xmlDoc*.
+  Fixes #23
+
+2021-05-27  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  5.0.1
+
+2021-05-19  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Website: Update some links
+
+  Don't link to the latest version of library.gnome.org/devel/libxml++
+  and library.gnome.org/devel/libxml++-tutorial.
+
+2021-05-18  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Add dependencies to Doxygen tag files in subprojects
+
+  Doxygen in a main project shall not be called before tag files have been
+  created or updated in subprojects.
+
+2021-05-16  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Fix build as subproject without building documentation
+
+  * meson.build: If mm-common-get is not found in maintainer-mode
+  with 'required: false', try with 'required: true'.
+  Don't try to use tag_file, if documentation is not built.
+  * docs/reference/meson.build: Don't use variables from modules
+  that don't define doxytagfile. These are subprojects that don't build
+  their documentation.
+
+2021-05-11  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  Clean up Visual Studio build files
+
+  We no longer need to ignore warnings C4251, C4273 and C4275, and we will
+  now use /EHsc, so we also no longer need to ignore warning C4530.
+
+2021-05-11  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  libxml++: Export classes selectively
+
+  This will make the code avoid exporting items such that things are tied
+  to a particular Visual Studio and STL version, and eliminate warnings
+  C4251, C4273 and C4275 from the build.
+
+2021-05-07  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Subprojects can use meson.add_dist_script() if meson.version() >= 0.58.0
+
+  * meson.build:
+  * docs/manual/meson.build:
+  * docs/reference/meson.build:
+  Call add_dist_script() in a subproject, if meson.version() >= 0.58.0.
+  * tools/build_scripts/tutorial-custom-cmd.py:
+  Use MESON_PROJECT_DIST_ROOT if it exists, else MESON_DIST_ROOT.
+  It exists if meson.version() >= 0.58.0.
+
+2021-04-07  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Meson build: No implicit_include_directories
+
+2021-03-26  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Meson build: Make it possible to use libxml++ as a subproject
+
+  mm-common can be a subproject of libxml++.
+  libxml2 can't be a subproject because it can't be built with Meson.
+
+2021-03-26  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  docs/reference/Doxyfile.in: Remove obsolete entries
+
+2021-03-09  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  libxml++config.h.*: Don't dllimport on MinGW
+
+  This will fix warnings when building items using libxml++ with MinGW/GCC.
+  
+  Please see: https://gitlab.gnome.org/GNOME/gtkmm/-/issues/90
+
+2021-01-02  Murray Cumming  <murraycu@google.com>
+
+  Add GitHub Actions for CI
+
+  Based on the ones used by libsigcplusplus.
+
+2020-12-23  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  docs/index.md: Describe the different libxml++ ABIs
+
+  The changes are automatically published at
+  libxmlplusplus.github.io/libxmlplusplus. See issue #20
+
+2020-12-21  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  5.0.0
+
+2020-10-04  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Docs: Change libxml++ webpage mentions to GitHub
+
+  Change libxmlplusplus.sourceforge.net to
+  libxmlplusplus.github.io/libxmlplusplus.
+
+2020-10-02  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Meson build: Fix versioning on macOS
+
+  See libsigcplusplus, pull request 65
+
+2020-07-23  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  NMake Makefiles: Use Meson-style DLL and .lib naming if requested
+
+  To make things more consistent and less prone to confusion, if 'USE_MESON_LIBS'
+  is specified in the NMake command line, build the DLLs and .lib's that are
+  named like the Meson counterparts.  Binaries built with Meson+Visual Studio
+  and the ones that are built via NMake using 'USE_MESON_LIBS' are
+  interchangeable, provided that they are built with the same Visual Studio
+  version.
+  
+  Also, introduce the 'USE_COMPAT_LIBS' option as well, so that we are more
+  consistent with the other active branches of libxml++.
+
+2020-07-22  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  NMake Makefiles: Fix build from tarballs
+
+  Update the rules so that we won't attempt to unnecessarily generate
+  libxml++config.h and libxml++.rc in our builds, and make sure that we do indeed
+  generate them with the version info if generating them becomes necessary.
+  
+  Also streamline this process so that it will be part of the 'all' target.
+
+2020-07-08  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  NMake Makefiles: Fix default include paths
+
+  Make sure we also look for headers in $(PREFIX)\include.
+
+2020-07-08  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  NMake Makefiles: Support ARM64 Windows builds
+
+  This will make the NMake Makefiles capable of building ARM64 binaries of
+  libxml++, which can be used on Windows 10 on ARM systems.
+
+2020-06-28  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  README: Update with instructions for building libxml++
+
+2020-06-28  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Add support for building libxml++ with Meson
+
+  libxml++-5.0 can be built with either Autotools or Meson.
+  New files have been copied from the libxml++-4-0 branch. Some of them
+  have been slightly changed.
+
+2020-06-28  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  docs: Fully update to libxml++-5.0 and C++17
+
+  * docs/manual/libxml++_without_code.xml:
+  * libxml++/libxml++.h: This is libxml++-5.0 and a C++17-compliant compiler
+  is required. Update such info where it has not already been done.
+
+2020-06-28  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  docs/reference/Doxyfile.in: Remove PERL_PATH
+
+  Doxygen since version 1.8.0 does not use PERL_PATH and MSCGEN_PATH.
+
+2020-06-20  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  Drop gendef.cc
+
+  Since we are now using compiler directives or mechanisms to export symbols from
+  our libxml++ DLL for all Windows dynamic builds, it's time to drop gendef.cc,
+  as it is no longer used
+
+2020-06-20  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  NMake Makefiles: Stop using gendef
+
+  This updates the NMake Makefiles to stop building and using the gendef tool,
+  since we are now using compiler directives to export symbols for libxml++
+  builds.
+  
+  Since this branch did not have official and working Visual Studio build files,
+  and it is not API/ABI compatible with the libxml++-2.6 series, gendef.cc will
+  be dropped in the next commit
+
+2020-06-20  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  libxml++config.h.in: Re-organize LIBXMLPP_API
+
+  We want to set LIBXMLPP_API to the following:
+  
+  * __declspec(dllexport) when building the libxml++ DLL on Windows
+  * __declspec(dllimport) when using the libxml++ DLL on Windows
+  * <nothing> if building/using a static or a non-Windows libxml++ build
+
+2020-06-20  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  libxml++ headers: Mark classes and functions with LIBXMLPP_API
+
+  This prepares us to export and symbols on Visual Studio builds using only
+  compiler directives, and to drop the venerable gendef.cc
+
+2020-06-20  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  libxml++/*.h: Remove check for old _MSC_VER stuff
+
+  They aren't applicable anymore, since the newer Visual Studio versions
+  addressed the issues.
+
+2020-06-19  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  Update MSVC_NMake/README
+
+  Update instructions for building since we moved to using NMake
+  Makefiles, and let people know that the same compiler version is
+  recommended for building libxml++.
+
+2020-06-19  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  Drop Visual Studio 2010 projects
+
+  They have been superseded with the NMake Makefiles, so it's time to
+  retire them from the source tree.
+
+2020-06-19  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  Add NMake Makefiles
+
+  This adds a set of NMake Makefiles that can be used to build libxml++,
+  which will replace the Visual Studio 2010(!) projects that reside in the
+  repository.
+  
+  To be consistent with the rest of the -mm stack that we build with Visual
+  Studio, we will need to separate the output filenames for the resulting .lib
+  and .dll files for Visual Studio 2017 and 2019.  A NMake Makefile build option
+  "USE_COMPAT_LIBS" is added if building 'xml++-vc150-x_y.[dll|lib] is still desired.
+  
+  Note that this branch does not rely on glibmm nor libsigc++, so linking against
+  libxml2 built with an older Visual Studio version should work properly, if
+  libxml2 is built with Visual Studio 2015 or later, but again, we are enforcing
+  the Visual Studio toolset versioning policy by default for consistency's sake.
+
+2020-06-19  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  gendef.cc: Skip symbols implemented inline
+
+  Like in the case of gtkmm, some symbols were implemented inline in the CRT on
+  Visual Studio 2015+ (UCRT), so we don't want to put them in our .def file,
+  otherwise linking will fail.
+
+2020-06-19  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  libxml++.rc.in: Fix version info
+
+  We are now on libxml++-5.0 (5
+  .x), not -2.6, so fix the version info in here
+
+2020-06-19  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  node.cc: Don't use __PRETTY_FUNCTION__
+
+  __PRETTY_FUNCTION__ is actually a GCC-specific macro, so avoid using it here
+
+2020-06-19  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  tests: Don't include config.h
+
+  The libxml++config.h should already fulfil our needs here.
+
+2020-06-19  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  Rename MSVC_Net2010 to MSVC_NMake
+
+  This initiates the move from the Visual Studio project files to using NMake
+  Makefiles, so that we reduce the likelihood of the MSVC build files becoming
+  outdated, by sharing the autotools build files' source listings.
+
+2020-01-12  Murray Cumming  <murrayc@murrayc.com>
+
+  NEWS: Minor correction
+
+2020-01-11  Murray Cumming  <murrayc@murrayc.com>
+
+  4.9.1
+
+2020-01-11  Murray Cumming  <murraycu@google.com>
+
+  Remove dependency on glibmm and don't use Glib::ustring
+
+  For now, the API uses an xmlpp::ustring where it previously used
+  Glib::ustring.
+
+2020-01-11  Murray Cumming  <murrayc@murrayc.com>
+
+  Change API name from libxml++-4.0 to libxml++-5.0
+
+2020-01-11  Murray Cumming  <murraycu@google.com>
+
+  3.9.1
+
+2020-01-11  Murray Cumming  <murraycu@google.com>
+
+  configure.ac: Use glibmm-2.26 instead of glibmm-2.24
+
+  The unstable glibmm ABI name changed again, to track the glib version
+  number, while waiting for GTK+ 4 to become stable.
+
+2020-01-11  Murray Cumming  <murraycu@google.com>
+
+  Update NEWS from the libxml++-3-2 branch
+
+2020-01-11  Murray Cumming  <murraycu@google.com>
+
+  Build/Docs: Change gitlab mentions to GitHub
+
+2020-01-09  Murray Cumming  <murrayc@murrayc.com>
+
+  Website: Add title
+
+2020-01-09  Murray Cumming  <murrayc@murrayc.com>
+
+  Website: Update some links
+
+2020-01-09  Murray Cumming  <murraycu@google.com>
+
+  docs: Slight markdown correction
+
+2020-01-09  Murray Cumming  <murraycu@google.com>
+
+  docs: Convert website to github pages
+
+  Using markdown instead of HTML.
+
+2019-03-21  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Doxyfile.in: Remove obsolete glibmm configuration constants
+
+  They have been removed from glibmm. See issue glibmm#22.
+
+2019-03-20  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Use glibmm-2.62 instead of glibmm-2.60
+
+  We have changed the ABI name in glibmm.
+
+2019-01-24  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  docs/index.html: Update bug report address
+
+2019-01-03  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  docs/manual: Link to gitlab.gnome.org
+
+  * docs/manual/libxml++_without_code.xml: Link to example code in
+  the master branch in gitlab.gnome.org/GNOME/libxmlplusplus.
+
+2019-01-03  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  docs/manual: Fix builddir != sourcedir builds
+
+2018-12-21  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  configure.ac: Update bug report address
+
+2018-11-09  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Use glibmm-2.60 instead of glibmm-2.58, require C++17
+
+  We have changed the ABI name in glibmm.
+  Require C++17. Glib::ustring in glibmm-2.60 requires C++17.
+
+2018-07-14  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Update README
+
+2018-07-14  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  tests: Don't require C++17
+
+  Don't include glibmm.h and don't call Glib::init(). Then no included
+  header file requires C++17 support, just C++14 support.
+  Glib::init() is not necessary, because libxml++ uses only a small part
+  of glibmm, mainly Glib::ustring.
+
+2018-07-14  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Rename libxml++.doap to libxmlplusplus.doap
+
+2018-04-09  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Use glibmm-2.58 instead of glibmm-2.56
+
+  We have changed the ABI name in glibmm.
+  Require C++14. glibmm-2.58 requires C++14.
+
+2017-10-22  Murray Cumming  <murrayc@murrayc.com>
+
+  docs: manual: Fix srcdir!=buildir build.
+
+2017-10-22  Murray Cumming  <murrayc@murrayc.com>
+
+  docs: Update the bugs link.
+
+2017-10-22  Murray Cumming  <murrayc@murrayc.com>
+
+  Build: Use glibmm-2.56 instead of glibmm-2.54.
+
+  We changed the (unstable) ABI name in glibmm a while ago.
+
+2017-05-03  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Document, DomParser: Improve XInclude processing
+
+  * examples/Makefile.am:
+  * examples/dom_xinclude/example.xml: Changed due to moved include files.
+  * examples/dom_xinclude/include1.txt:
+  * examples/dom_xinclude/include2.xml: Moved to examples/dom_xinclude/xinclude/
+  * examples/dom_xinclude/main.cc: Test both Document::process_xinclude() and
+  Xinclude processing with DomParser::parse_file().
+  * libxml++/document.[cc|h]: Add fixup_base_uris parameter to process_xinclude().
+  * libxml++/parsers/domparser.[cc|h]: Add set/get_xinclude_options().
+  Add optional XInclude processing to the parse methods. Bug 781566
+
+2017-05-03  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Parser: Make some methods const
+
+2017-03-22  Murray Cumming  <murrayc@murrayc.com>
+
+  Use glibmm-2.54 instead of glibmm-2.52
+
+  We changed the ABI name.
+
+2016-12-12  Murray Cumming  <murrayc@murrayc.com>
+
+  Examples: Make some methods static.
+
+  Noticed by cppcheck.
+
+2016-12-12  Murray Cumming  <murrayc@murrayc.com>
+
+  Replace a C-style cast with static_cast<>().
+
+  Noticed by cppcheck.
+
+2016-12-12  Murray Cumming  <murrayc@murrayc.com>
+
+  Add explicit keyword to some single-parameter constructors.
+
+  Noticed by cppcheck.
+
+2016-12-08  Murray Cumming  <murrayc@murrayc.com>
+
+  Fix tiny comment typo.
+
+2016-11-14  Murray Cumming  <murrayc@murrayc.com>
+
+  Use glibmm-2.52 instead of glibmm-2.4.
+
+2016-11-14  Murray Cumming  <murrayc@murrayc.com>
+
+  Change the ABI to libxml++-4.0 instead of libxml++-3.0.
+
+  This installs in parallel with libxml++-3.0.
+
+2016-11-14  Murray Cumming  <murrayc@murrayc.com>
+
+  3.0.1
+
+2016-10-27  Murray Cumming  <murrayc@murrayc.com>
+
+  Doxyfile.in: Remove now-unsupported Doxygen tags.
+
+2016-07-18  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  Require mm-common 0.9.10
+
+  Necessary when MM_AX_CXX_COMPILE_STDCXX is used in configure.ac.
+
+2016-07-18  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  Fix even more silent 'make check'
+
+  * examples/Makefile.am: Add $(AM_V_GEN) and $(AM_V_at) to 'echo' commands.
+  Bug #768797
+
+2016-07-18  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  Build: Fix silent builds
+
+  * configure.ac: Pass yes to AM_SILENT_RULES, thus enabling silent builds.
+  Replace MM_AX_CXX_COMPILE_STDCXX_11 by MM_AX_CXX_COMPILE_STDCXX (not necessary
+  for silent builds).
+  * docs/reference/Doxyfile.in: Set QUIET=YES.
+  Update for doxygen 1.8.11 (not necessary for silent builds).
+  Bug #768797
+
+2016-07-06  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  Docs: Suppress some links generated by Doxygen
+
+2016-07-06  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  Element::remove_attribute(): Delete the C++ wrapper
+
+  * libxml++/nodes/element.cc: Call Node::free_wrappers() before the call to
+  xmlUnsetProp() or xmlUnsetNsProp(). Bug #768404.
+  Based on a patch by Harald Schmalzl <h.schmalzl@gekko.at>
+
+2016-02-02  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  3.0.0
+
+2016-01-12  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  2.91.3
+
+2016-01-07  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  DomParser: Make operator bool() explicit
+
+2016-01-07  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  Document: Test for nullptr in a constructor
+
+  In Document(_xmlDoc* doc), throw an exception if doc==nullptr.
+
+2016-01-07  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  NonCopyable: Make it obvious that it can't be moved
+
+  Declare the move operators deleted. They are deleted anyway, but this makes
+  it obvious.
+
+2016-01-07  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  Add some noexcept
+
+2016-01-02  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  Use using instead of typedef
+
+  * libxml++/document.cc:
+  * libxml++/nodes/element.h:
+  * libxml++/nodes/node.h:
+  * libxml++/parsers/parser.h:
+  * libxml++/parsers/saxparser.h:
+  * libxml++/parsers/textreader.h: Use using newtypename = oldtype instead of
+  typedef oldtype newtypename. This is the recommended way of declaring
+  type name aliases in C++11.
+
+2015-12-30  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  Use scoped enums (enum class) instead of unscoped enums
+
+  * examples/dom_build/main.cc:
+  * examples/dom_xpath/main.cc: Update names of enum constants.
+  * libxml++/document.[cc|h]:
+  * libxml++/nodes/node.[cc|h]:
+  * libxml++/parsers/parser.[cc|h]:
+  * libxml++/parsers/textreader.[cc|h]: Replace enum by enum class.
+  Modify the names of the enum constants. E.g. XML_INTERNAL_GENERAL_ENTITY ->
+  XmlEntityType::INTERNAL_GENERAL.
+  
+  This patch breaks API and ABI. The API and ABI of libxml++ 3.x has not yet
+  been frozen.
+
+2015-11-16  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  configure.ac: Use -Wsuggest-override with --enable-warnings=fatal
+
+2015-11-16  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  Examples: More use of override keyword
+
+  * examples/sax_parser_build_dom/svgparser.h:
+  * examples/sax_parser_entities/myparser.h: Use the override keyword on all
+  overridden virtual methods.
+
+2015-11-05  Murray Cumming  <murrayc@murrayc.com>
+
+  SchemaValidatorBase: Use the override keyword.
+
+  Though this is strange on pure virtual methods. These only
+  seem to be repeated here so they can have more specific documentation
+  than in the base class.
+
+2015-11-05  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  Remove trailing blanks
+
+2015-11-05  Renu Tyagi  <renu.tyagi@samsung.com>
+
+  Element: Remove redundant null check
+
+  Bug #757515
+
+2015-10-30  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  2.91.2
+
+2015-10-29  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  Work around some platforms' lack of support for std::exception_ptr
+
+  * libxml++/exceptions/exception.[cc|h]:
+  * libxml++/exceptions/internal_error.[cc|h]:
+  * libxml++/exceptions/parse_error.[cc|h]:
+  * libxml++/exceptions/validity_error.[cc|h]: Reintroduce Raise() and Clone(),
+  now renamed to raise() and clone().
+  * libxml++/exceptions/wrapped_exception.[cc|h]: Reintroduced files, now
+  with the wrapped_exception class declared only if LIBXMLXX_HAVE_EXCEPTION_PTR
+  is defined.
+  * libxml++/filelist.am: Add wrapped_exception.h.
+  * libxml++/parsers/parser.[cc|h]: Replace std::exception_ptr exception_ptr_
+  by std::unique_ptr<xmlpp::exception> exception_.
+  * libxml++/parsers/saxparser.cc: exception_ptr_ -> exception_
+  * libxml++/parsers/saxparser.h: Note in the class description that some
+  exceptions are replaced by xmlpp::exception if std::exception_ptr is not
+  supported.
+  * libxml++/validators/validator.[cc|h]: Replace std::exception_ptr
+  exception_ptr_ by std::unique_ptr<xmlpp::exception> exception_.
+  * examples/sax_exception/myparser.[cc|h]: Reintroduce Raise() and Clone(),
+  now renamed to raise() and clone().
+  * tests/saxparser_chunk_parsing_inconsistent_state/main.cc:
+  * tests/saxparser_parse_double_free/main.cc:
+  * tests/saxparser_parse_stream_inconsistent_state/main.cc: Catch
+  xmlpp::exception, if LIBXMLXX_HAVE_EXCEPTION_PTR is not defined.
+  Bug #757042.
+  
+  The substitution of exception_ for exception_ptr_ in Parser and Validator
+  breaks ABI. The ABI of libxml++ 3.x has not yet been frozen.
+  
+  Thanks to Daniel Trebbien <dtrebbien@gmail.com>, who supplied a patch for
+  libxml++ 2.40.
+
+2015-10-27  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  Add LIBXMLXX_HAVE_EXCEPTION_PTR
+
+  * build/.gitignore: New file.
+  * build/cxx_std.m4: New file with LIBXMLXX_CXX_HAS_EXCEPTION_PTR
+  autoconf macro. Defines LIBXMLXX_HAVE_EXCEPTION_PTR if std::exception_ptr
+  exists.
+  * .gitignore: Move some lines to build/.gitignore.
+  * configure.ac: Store some build files in the build directory, like most mm
+  packages. Don't use the macros directory.
+  * libxml++config.h.in: Add LIBXMLXX_HAVE_EXCEPTION_PTR.
+  * Makefile.am:
+  * docs/Makefile.am: macros -> build. Bug #757042.
+  
+  Thanks to Daniel Trebbien <dtrebbien@gmail.com>, who supplied a patch with
+  the test code in LIBXMLXX_HAVE_EXCEPTION_PTR.
+
+2015-10-12  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  Remove LIBXMLCPP_EXCEPTIONS_ENABLED
+
+  * configure.ac:
+  * libxml++config.h.in: Remove LIBXMLCPP_EXCEPTIONS_ENABLED. Bug #754673.
+
+2015-10-09  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  Still more use of nullptr instead of 0
+
+2015-10-09  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  Still more use of nullptr instead of 0
+
+2015-10-08  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  More use of nullptr instead of 0
+
+  Bug #756166 (also the previous commit)
+
+2015-10-08  Gaurav Gupta  <g.gupta@samsung.com>
+
+  Use nullptr instead of 0 at missing places - C++-11
+
+2015-10-08  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  Remove some TODO comments
+
+2015-10-08  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  Add xmlpp::format_printf_message()
+
+  * libxml++/exceptions/exception.[h|cc]: Add format_printf_message().
+  * libxml++/parsers/parser.cc:
+  * libxml++/parsers/saxparser.cc:
+  * libxml++/validators/validator.cc: Call format_printf_message().
+
+2015-10-05  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  2.91.1
+
+2015-10-01  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  Inherit NonCopyable publicly
+
+  Inherit NonCopyable publicly instead of privatly. It doesn't really matter,
+  but private inheritance is unusual. There's no good reason to use it for
+  NonCopyable. Bug #754673.
+
+2015-10-01  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  Element: Rename set/get_child_text() to set/get_first_child_text()
+
+  * libxml++/nodes/element.[h|cc]: Rename set/get_child_text() to
+  set/get_first_child_text() by analogy with Node::get_first_child().
+  * examples/dom_build/main.cc:
+  * examples/dom_xpath/main.cc:
+  * examples/import_node/main.cc: Replace set/get_child_text() by
+  set/get_first_child_text(). Bug #754673.
+
+2015-10-01  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  Remove some unnecessary #include and reinterpret_cast
+
+2015-10-01  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  Move some code from DtdValidator to Dtd
+
+  * libxml++/dtd.[h|cc]:
+  * libxml++/validators/dtdvalidator.[h|cc]: Move the code for parsing a DTD
+  from xmlpp::DtdValidator to xmlpp::Dtd. The code is arranged like that in
+  the other validators. Bug #754673.
+
+2015-09-29  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  Node: Replace remove_child() by remove_node()
+
+  * libxml++/nodes/node.[h|cc]: Replace remove_child() by the static
+  remove_node(). Improve the documentation of remove_node() and the destructor.
+  Bug #754673
+
+2015-09-29  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  Use std::string for filenames
+
+  Since filenames are not necessarily UTF-8 encoded, store them in std::strings
+  instead of Glib::ustrings. Bug #754673.
+
+2015-09-28  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  Document: Make some methods non-virtual
+
+  * libxml++/document.h: Make some private methods non-virtual. Bug #754673.
+
+2015-09-28  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  Attribute and subclasses: Move some methods
+
+  * libxml++/attribute.[h|cc]: Remove get_name(). Make get_value() virtual.
+  Move set_value() and cobj() to AttributeNode.
+  * libxml++/attributedeclaration.h: get_value() is overridden.
+  * libxml++/attributenode.[h|cc]: Add get_value(), set_value(), cobj().
+  Bug #754673.
+
+2015-09-28  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  Move add_child() methods from Node to Element
+
+  * libxml++/nodes/element.[h|cc]:
+  * libxml++/nodes/node.[h|cc]: Move all add_child*() methods to Element and
+  rename them to add_child_element*().
+  * examples/dom_build/main.cc:
+  * examples/dom_update_namespace/main.cc:
+  * examples/dtdvalidation/main.cc:
+  * examples/sax_parser_build_dom/svgparser.cc: Change add_child() to
+  add_child_element().  Bug #754673.
+
+2015-09-24  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  Validators: Move _xmlValidCtxt pointer to DtdValidator
+
+  * libxml++/validators/validator.[h|cc]:
+  * libxml++/validators/dtdvalidator.[h|cc]: Rename _xmlValidCtxt* valid_ to
+  context_ and move it from Validator to DtdValidator.
+  Rename initialize_valid() to initialize_context().
+  * libxml++/validators/schemavalidatorbase.[h|cc]:
+  * libxml++/validators/relaxngvalidator.[h|cc]:
+  * libxml++/validators/xsdvalidator.[h|cc]: Rename initialize_valid() to
+  initialize_context(). Bug #754673.
+
+2015-09-24  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  Validators: Change which methods are virtual, add override
+
+  * libxml++/validators/validator.h: Add some pure virtual methods.
+  * libxml++/validators/dtdvalidator.[h|cc]: Only overridden methods are virtual.
+  operator bool() is explicit and overridden. validate() returns void.
+  * libxml++/validators/schemavalidatorbase.h: Replace operator const void*()
+  by explicit operator bool(). Remove typedef BoolExpr.
+  * libxml++/validators/relaxngvalidator.[h|cc]:
+  * libxml++/validators/xsdvalidator.[h|cc]: Replace operator const void*()
+  by explicit operator bool(). Add override. Bug #754673.
+
+2015-09-23  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  SaxParser: Start each parsing with a new Document for entity resolution
+
+  * libxml++/parsers/saxparser.[h|cc]: Make entity_resolver_doc_ a unique_ptr.
+  Create a new Document in an overridden initialize_context(). Bug #754673.
+
+2015-09-23  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  DomParser, SaxParser: Make some methods non-virtual
+
+  * libxml++/parsers/domparser.h: Make parse_context() non-virtual.
+  * libxml++/parsers/saxparser.h: Make parse_chunk(), finish_chunk_parsing()
+  and parse() non-virtual. Bug #754673.
+
+2015-09-23  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  xmlpp::exception and its subclasses: Remove Raise() and Clone()
+
+  Remove the virtual methods Raise() and Clone() from xmlpp::exception and
+  its subclasses. These methods are not needed now that std::exception_ptr
+  is used for storing and later rethrowing an exception. Bug #754673.
+
+2015-09-22  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  Remove the deprecated Schema and SchemaValidator classes
+
+  * libxml++/schema.[h|cc]:
+  * libxml++/validators/schemavalidator.[h|cc]: Remove these files.
+  * examples/schemavalidation/main.cc: Remove test of SchemaValidator.
+  * libxml++/filelist.am: Remove schema.h and schemavalidator.h.
+  * libxml++/libxml++.h: Remove schemavalidator.h. Bug #754673.
+
+2015-09-22  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  Remove wrapped_exception
+
+  * libxml++/exceptions/wrapped_exception.[h|cc]: Remove these files.
+  * libxml++/filelist.am: Remove wrapped_exception.h.
+  * libxml++/validators/validator.[h|cc]:
+  * libxml++/parsers/parser.[h|cc]: Replace handleException(const exception&)
+  by handle_exception(). Replace exception* exception_ by
+  std::exception_ptr exception_ptr_.
+  * libxml++/parsers/saxparser.cc: Call handle_exception() instead of
+  handleException(). Bug #754673.
+
+2015-09-21  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  Parser: Replace ExtraParserData by private Pimpl struct
+
+  * libxml++/parsers/parser.[h|cc]: Replace the ExtraParserData struct in
+  parser.cc by a private Parser::Pimpl struct. Move some protected data to
+  Pimpl. Add pure virtual parse_memory_raw(). Default in DOM parser is to
+  throw both parse errors and validity errors in exceptions.
+  * libxml++/parsers/domparser.h:
+  * libxml++/parsers/saxparser.h: Add override to parse_memory_raw().
+  * libxml++/parsers/saxparser.cc: Call set_throw_messages(false) in ctor.
+  Bug #754673.
+
+2015-09-17  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  Replace remaining auto_ptr by unique_ptr
+
+  Replace the deprecated std::auto_ptr by std::unique_ptr in header files.
+  Bug #753123.
+
+2015-09-17  Knut Aksel Røysland  <knutroy@ifi.uio.no>
+
+  Element::get_attribute(): Propagate const qualifier to Attribute
+
+  * libxml++/nodes/element.[h|cc]: Let the const version of get_attribute()
+  return a const Attribute*. Add a non-const version. Bug #632524.
+
+2015-09-17  Knut Aksel Røysland  <knutroy@ifi.uio.no>
+
+  Document::get_root_node(): Propagate const qualifier to root Element
+
+  * libxml++/document.[h|cc]: Let the const version of get_root_node() return
+  a const Element*. Add a non-const version.
+  * examples/sax_parser_build_dom/main.cc:
+  * examples/sax_parser_build_dom/svgdocument.[h|cc]: Add some const.
+  Bug #632522.
+
+2015-09-17  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  Replace xmlpp::NodeSet by xmlpp::Node::NodeSet
+
+  * libxml++/nodes/node.[h|cc]: Declare the NodeSet and const_NodeSet typedefs
+  inside class Node. That's consistent with how Node::NodeList, Node::PrefixNsMap
+  and Element::AttributeList are declared.
+
+2015-09-17  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  Element::get_attributes(): Propagate const qualifier to attributes
+
+  * libxml++/nodes/element.[h|cc]: Add const_AttributeList. The const version
+  of get_attributes() returns const_AttributeList instead of const AttributeList.
+  * examples/dom_parser/main.cc:
+  * examples/dom_xinclude/main.cc: Use "for(const auto&". Bug #338907.
+
+2015-09-17  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  Node::find(): Propagate const qualifier to found nodes
+
+  * libxml++/nodes/node.[h|cc]: Add const_NodeSet. Add non-const versions of
+  find() and let the const versions return const_NodeSet.
+  * examples/dom_xpath/main.cc: Add some const. Bug #338907.
+
+2015-09-17  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  Node::get_children(): Propagate const qualifier to children
+
+  * libxml++/nodes/node.[h|cc]: Add const_NodeList. The const version of
+  get_children() returns const_NodeList instead of const NodeList.
+  * examples/dom_parser/main.cc: Remove unused variable.  Bug #338907.
+
+2015-09-14  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  Prepare for an ABI/API-breaking release
+
+  * .gitignore: 2.6 -> *.
+  * NEWS: Note that the next release will break ABI.
+  * README: 2.6 -> 3.0
+  * configure.ac: Version 2.90.0, 2.6 -> 3.0, reset LIBXMLXX_SO_VERSION to 0:0:0.
+  * docs/manual/libxml++_without_code.xml: 2.6 -> 3.0
+  * libxml++/libxml++.h: 2.6 -> 3.0
+  * libxml++-2.6.pc.in: Rename to libxml++.pc.in.
+  * libxml++.pc.in: Rename from libxml++-2.6.pc.in. Bug #754673.
+  
+  The libxml++-2-40 branch is intended for future 2.40.x releases with the
+  libxml++-2.6 ABI.
+
+2015-09-11  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  Update the manual
+
+  * docs/manual/libxml++_without_code.xml: Minor updates.
+
+2015-09-11  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  docs/Makefile.am: Fix missing update of relative path
+
+  Fix relative path to ../examples in the rule for manual/libxml++.xml.
+  Add a TODO comment, because I'm uncertain about the relative paths in
+  the rsync commands that upload to sourceforge.net.
+
+2015-09-11  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  Split Makefile.am
+
+  * Makefile.am: Move most of the contents to the new files. It makes libxml++
+  more like other mm packages.
+  * docs/Makefile.am:
+  * libxml++/filelist.am:
+  * libxml++/Makefile.am:
+  * MSVC_Net2010/filelist.am: New files.
+  * configure.ac: Add the new Makefiles to AC_CONFIG_FILES().
+  * docs/reference/Doxyfile.in: Remove docs/ from relative paths.
+
+2015-09-09  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  Remove MSVC 2005 and 2008 projects
+
+  MSVC_Net2005/*:
+  MSVC_Net2008/*: Remove the whole directories.
+  configure.ac:
+  Makefile.am:
+  .gitignore: Remove MSVC_Net2005 and 2008 files.
+  
+  It's no longer possible to build libxml++ with MSVC 2005 or 2008, when C++11
+  features are used. MSVC 2010 is not useful either, but its project files
+  are kept for now. They can perhaps be useful as a starting point when building
+  with later MSVC versions. See also libsigc++ bug 754082.
+
+2015-09-05  Murray Cumming  <murrayc@murrayc.com>
+
+  2.39.2
+
+2015-08-27  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  xmlpp::wrapped_exception: Add comments
+
+  Bug #753570
+
+2015-08-27  Kjell Ahlstedt  <kjell.ahlstedt@bredband.net>
+
+  Fix make check with --enable-warnings=fatal and fix make distcheck
+
+  * tests/saxparser_chunk_parsing_inconsistent_state/main.cc:
+  * tests/saxparser_parse_double_free/main.cc: Comment out names of unused
+  parameters in function definitions.
+  * Makefile.am: Add wrapped_exception.h to h_exceptions_sources_public or else
+  it won't be distributed.
+  * libxml++/exceptions/wrapped_exception.h: Add DOXYGEN_SHOULD_SKIP_THIS.
+  xmlpp::wrapped_exception is a private class that shall not be included in
+  the documentation. Bug #753570.
+

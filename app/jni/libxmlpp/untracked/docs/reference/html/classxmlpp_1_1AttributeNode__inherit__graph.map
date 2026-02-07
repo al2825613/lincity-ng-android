@@ -1,0 +1,6 @@
+<map id="xmlpp::AttributeNode" name="xmlpp::AttributeNode">
+<area shape="rect" id="node1" title="Represents an explicit attribute of an XML element node." alt="" coords="5,229,168,256"/>
+<area shape="rect" id="node2" href="$classxmlpp_1_1Attribute.html" title="Represents an XML attribute node or attribute declaration." alt="" coords="23,155,151,181"/>
+<area shape="rect" id="node3" href="$classxmlpp_1_1Node.html" title="Represents XML Nodes." alt="" coords="34,80,139,107"/>
+<area shape="rect" id="node4" href="$classxmlpp_1_1NonCopyable.html" title="A base for classes which cannot be copied or moved." alt="" coords="7,5,166,32"/>
+</map>

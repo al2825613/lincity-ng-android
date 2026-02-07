@@ -1,0 +1,5 @@
+<map id="xmlpp::OStreamOutputBuffer" name="xmlpp::OStreamOutputBuffer">
+<area shape="rect" id="node1" title="An OutputBuffer implementation that send datas to a std::ostream." alt="" coords="5,155,216,181"/>
+<area shape="rect" id="node2" href="$classxmlpp_1_1OutputBuffer.html" title="Base class for xmlOutputBuffer wrapper." alt="" coords="33,80,188,107"/>
+<area shape="rect" id="node3" href="$classxmlpp_1_1NonCopyable.html" title="A base for classes which cannot be copied or moved." alt="" coords="31,5,190,32"/>
+</map>

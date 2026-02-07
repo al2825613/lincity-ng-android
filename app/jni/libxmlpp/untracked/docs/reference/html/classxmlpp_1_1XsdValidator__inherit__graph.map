@@ -1,0 +1,6 @@
+<map id="xmlpp::XsdValidator" name="xmlpp::XsdValidator">
+<area shape="rect" id="node1" title="XSD schema validator." alt="" coords="35,229,189,256"/>
+<area shape="rect" id="node2" href="$classxmlpp_1_1SchemaValidatorBase.html" title="Base class for schema validators." alt="" coords="5,155,219,181"/>
+<area shape="rect" id="node3" href="$classxmlpp_1_1Validator.html" title="Base class for XML validators." alt="" coords="47,80,177,107"/>
+<area shape="rect" id="node4" href="$classxmlpp_1_1NonCopyable.html" title="A base for classes which cannot be copied or moved." alt="" coords="33,5,191,32"/>
+</map>

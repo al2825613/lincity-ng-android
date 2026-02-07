@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE!! IT WAS GENERATED AUTOMATICALLY! (you must edit files in help_template directory) -->
+<Document style="helpdocument">
+	<p style="htitle">Выберите интересующую Вас тему</p>
+   <img src="images/gui/buttonpanel/power/powerlines.png" halign="center"/>
+	<p style="hp"><a href="powerline">Линии электропередач (ЛЭП)</a></p>
+   <img src="images/gui/buttonpanel/power/solarpower.png" halign="center"/>
+	<p style="hp"><a href="powerssolar">Солнечная электростанция</a></p>
+   <img src="images/gui/buttonpanel/power/substation.png" halign="center"/>
+	<p style="hp"><a href="substation">Подстанция</a></p>
+   <img src="images/gui/buttonpanel/residence/residence.png" halign="center"/>
+	<p style="hp"><a href="residential">Жилой дом</a></p>
+   <img src="images/gui/buttonpanel/waterwell.png" halign="center"/>
+	<p style="hp"><a href="waterwell">Колодец</a></p>
+   <img src="images/gui/buttonpanel/parks/farm.png" halign="center"/>
+	<p style="hp"><a href="farm">Ферма</a></p>
+   <img src="images/gui/buttonpanel/industry/market.png" halign="center"/>
+	<p style="hp"><a href="market">Магазин</a></p>
+   <img src="images/gui/buttonpanel/base/bulldozer.png" halign="center"/>
+	<p style="hp"><a href="bulldoze">Бульдозер</a></p>
+   <img src="images/gui/buttonpanel/base/broom.png" halign="center"/>
+	<p style="hp"><a href="evacuate">Опустошение</a></p>
+   <img src="images/gui/buttonpanel/transport/tracks.png" halign="center"/>
+	<p style="hp"><a href="track">Грунтовка</a></p>
+   <img src="images/gui/buttonpanel/mining/coalmine.png" halign="center"/>
+	<p style="hp"><a href="coalmine">Угольная шахта</a></p>
+   <img src="images/gui/buttonpanel/transport/rails2.png" halign="center"/>
+	<p style="hp"><a href="rail">Железная дорога</a></p>
+   <img src="images/gui/buttonpanel/power/coalpower.png" halign="center"/>
+	<p style="hp"><a href="powerscoal">Угольная электростанция</a></p>
+   <img src="images/gui/buttonpanel/transport/road.png" halign="center"/>
+	<p style="hp"><a href="road">Дорога</a></p>
+   <img src="images/gui/buttonpanel/industry/lightindustry.png" halign="center"/>
+	<p style="hp"><a href="industryl">Лёгкая промышленность</a></p>
+   <img src="images/gui/buttonpanel/misc/university.png" halign="center"/>
+	<p style="hp"><a href="university">Университет</a></p>
+   <img src="images/gui/buttonpanel/mining/commune.png" halign="center"/>
+	<p style="hp"><a href="commune">Коммуна</a></p>
+   <img src="images/gui/buttonpanel/mining/oremine.png" halign="center"/>
+	<p style="hp"><a href="oremine">Рудник</a></p>
+   <img src="images/gui/buttonpanel/transport/port.png" halign="center"/>
+	<p style="hp"><a href="export">Импорт, экспорт</a></p>
+   <img src="images/gui/buttonpanel/industry/heavyindustry2.png" halign="center"/>
+	<p style="hp"><a href="industryh">Тяжёлая промышленность (металлургический завод)</a></p>
+   <img src="images/gui/buttonpanel/parks/tree.png" halign="center"/>
+	<p style="hp"><a href="park">Парк</a></p>
+   <img src="images/gui/buttonpanel/mining/recycling.png" halign="center"/>
+	<p style="hp"><a href="recycle">Центр по переработке отходов</a></p>
+   <img src="images/gui/buttonpanel/parks/water.png" halign="center"/>
+	<p style="hp"><a href="river">Река/Озеро</a></p>
+   <img src="images/gui/buttonpanel/misc/health.png" halign="center"/>
+	<p style="hp"><a href="health">Больница</a></p>
+   <img src="images/gui/buttonpanel/transport/rocket.png" halign="center"/>
+	<p style="hp"><a href="rocket">Стартовая площадка для космических кораблей</a></p>
+   <img src="images/gui/buttonpanel/power/windmills.png" halign="center"/>
+	<p style="hp"><a href="windmill">Ветрогенератр</a></p>
+   <img src="images/gui/buttonpanel/parks/monument.png" halign="center"/>
+	<p style="hp"><a href="monument">Монумент</a></p>
+   <img src="images/gui/buttonpanel/misc/book.png" halign="center"/>
+	<p style="hp"><a href="school">Школа</a></p>
+   <img src="images/gui/buttonpanel/parks/mills.png" halign="center"/>
+	<p style="hp"><a href="mill">Текстильная фабрика</a></p>
+   <img src="images/gui/buttonpanel/industry/pottery.png" halign="center"/>
+	<p style="hp"><a href="pottery">Гончарная мастерская</a></p>
+   <img src="images/gui/buttonpanel/misc/fire.png" halign="center"/>
+	<p style="hp"><a href="firestation">Пожарная станция</a></p>
+   <img src="images/gui/buttonpanel/misc/sports.png" halign="center"/>
+	<p style="hp"><a href="cricket">Баскетбольная площадка</a></p>
+   <img src="images/gui/buttonpanel/transport/port.png" halign="center"/>
+	<p style="hp"><a href="port">Порт</a></p>
+</Document>

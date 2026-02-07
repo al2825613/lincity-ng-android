@@ -1,0 +1,238 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>SAX Parser</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="libxml++ - An XML Parser for C++">
+<link rel="up" href="chapter-parsers.html" title="Chapter 2. Parsers">
+<link rel="prev" href="chapter-parsers.html" title="Chapter 2. Parsers">
+<link rel="next" href="sect-reader-parser.html" title="TextReader Parser">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="navheader">
+<table width="100%" summary="Navigation header">
+<tr><th colspan="3" align="center">SAX Parser</th></tr>
+<tr>
+<td width="20%" align="left">
+<a accesskey="p" href="chapter-parsers.html">Prev</a> </td>
+<th width="60%" align="center">Chapter 2. Parsers</th>
+<td width="20%" align="right"> <a accesskey="n" href="sect-reader-parser.html">Next</a>
+</td>
+</tr>
+</table>
+<hr>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="sect-sax-parser"></a>SAX Parser</h2></div></div></div>
+    
+
+      <p>The SAX (Simple API for XML) parser presents each node of the XML document in sequence. So when you process one node, you must have already stored information about any relevant previous nodes, and you have no information at that time about subsequent nodes. The SAX parser uses less memory than the DOM parser and it is a suitable abstraction for documents that can be processed sequentially rather than as a whole.</p>
+
+      <p>By using the <code class="literal">parse_chunk()</code> method instead of for instance <code class="literal">parse_file()</code>, you can even parse parts of the XML document before you have received the whole document.</p>
+
+      <p>As shown in the example, you should derive your own class from SaxParser and override some of the virtual methods. These "handler" methods will be called while the document is parsed.</p>
+
+<div class="section">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="sect-sax-example"></a>Example</h3></div></div></div>
+
+
+<p>This example shows how the handler methods are called during parsing.</p>
+<p><a class="ulink" href="https://github.com/libxmlplusplus/libxmlplusplus/tree/master/examples/sax_parser" target="_top">Source Code</a></p>
+
+<p>File: <code class="filename">myparser.h</code></p>
+<pre class="programlisting">
+#ifndef __LIBXMLPP_EXAMPLES_MYPARSER_H
+#define __LIBXMLPP_EXAMPLES_MYPARSER_H
+
+#include &lt;libxml++/libxml++.h&gt;
+
+class MySaxParser : public xmlpp::SaxParser
+{
+public:
+  MySaxParser();
+  ~MySaxParser() override;
+
+protected:
+  //overrides:
+  void on_start_document() override;
+  void on_end_document() override;
+  void on_start_element(const xmlpp::ustring&amp; name,
+                                const AttributeList&amp; properties) override;
+  void on_end_element(const xmlpp::ustring&amp; name) override;
+  void on_characters(const xmlpp::ustring&amp; characters) override;
+  void on_comment(const xmlpp::ustring&amp; text) override;
+  void on_warning(const xmlpp::ustring&amp; text) override;
+  void on_error(const xmlpp::ustring&amp; text) override;
+  void on_fatal_error(const xmlpp::ustring&amp; text) override;
+};
+
+
+#endif //__LIBXMLPP_EXAMPLES_MYPARSER_H
+</pre>
+<p>File: <code class="filename">main.cc</code></p>
+<pre class="programlisting">
+#ifdef HAVE_CONFIG_H
+#include &lt;config.h&gt;
+#endif
+
+#include &lt;cstdlib&gt;
+#include &lt;cstring&gt; // std::memset()
+#include &lt;fstream&gt;
+#include &lt;iostream&gt;
+
+#include "myparser.h"
+
+int
+main(int argc, char* argv[])
+{
+  std::string filepath;
+  if(argc &gt; 1 )
+    filepath = argv[1]; //Allow the user to specify a different XML file to parse.
+  else
+    filepath = "example.xml";
+
+  // Parse the entire document in one go:
+  auto return_code = EXIT_SUCCESS;
+  try
+  {
+    MySaxParser parser;
+    parser.set_substitute_entities(true);
+    parser.parse_file(filepath);
+  }
+  catch(const xmlpp::exception&amp; ex)
+  {
+    std::cerr &lt;&lt; "libxml++ exception: " &lt;&lt; ex.what() &lt;&lt; std::endl;
+    return_code = EXIT_FAILURE;
+  }
+
+  // Incremental parsing, sometimes useful for network connections:
+  try
+  {
+    std::cout &lt;&lt; std::endl &lt;&lt; "Incremental SAX Parser:" &lt;&lt; std::endl;
+
+    std::ifstream is(filepath.c_str());
+    if (!is)
+      throw xmlpp::exception("Could not open file " + filepath);
+
+    char buffer[64];
+    const size_t buffer_size = sizeof(buffer) / sizeof(char);
+
+    //Parse the file:
+    MySaxParser parser;
+    parser.set_substitute_entities(true);
+    do
+    {
+      std::memset(buffer, 0, buffer_size);
+      is.read(buffer, buffer_size-1);
+      if(is.gcount())
+      {
+        xmlpp::ustring input(buffer, buffer+is.gcount());
+        parser.parse_chunk(input);
+      }
+    }
+    while(is);
+
+    parser.finish_chunk_parsing();
+  }
+  catch(const xmlpp::exception&amp; ex)
+  {
+    std::cerr &lt;&lt; "Incremental parsing, libxml++ exception: " &lt;&lt; ex.what() &lt;&lt; std::endl;
+    return_code = EXIT_FAILURE;
+  }
+
+  return return_code;
+}
+</pre>
+<p>File: <code class="filename">myparser.cc</code></p>
+<pre class="programlisting">
+#include "myparser.h"
+
+#include &lt;iostream&gt;
+
+MySaxParser::MySaxParser()
+  : xmlpp::SaxParser()
+{
+}
+
+MySaxParser::~MySaxParser()
+{
+}
+
+void MySaxParser::on_start_document()
+{
+  std::cout &lt;&lt; "on_start_document()" &lt;&lt; std::endl;
+}
+
+void MySaxParser::on_end_document()
+{
+  std::cout &lt;&lt; "on_end_document()" &lt;&lt; std::endl;
+}
+
+void MySaxParser::on_start_element(const xmlpp::ustring&amp; name,
+                                   const AttributeList&amp; attributes)
+{
+  std::cout &lt;&lt; "node name=" &lt;&lt; name &lt;&lt; std::endl;
+
+  // Print attributes:
+  for(const auto&amp; attr_pair : attributes)
+  {
+    std::cout &lt;&lt; "  Attribute name=" &lt;&lt;  attr_pair.name &lt;&lt; std::endl;
+    std::cout &lt;&lt; "    , value= " &lt;&lt;  attr_pair.value &lt;&lt; std::endl;
+  }
+}
+
+void MySaxParser::on_end_element(const xmlpp::ustring&amp; /* name */)
+{
+  std::cout &lt;&lt; "on_end_element()" &lt;&lt; std::endl;
+}
+
+void MySaxParser::on_characters(const xmlpp::ustring&amp; text)
+{
+  std::cout &lt;&lt; "on_characters(): " &lt;&lt; text &lt;&lt; std::endl;
+}
+
+void MySaxParser::on_comment(const xmlpp::ustring&amp; text)
+{
+  std::cout &lt;&lt; "on_comment(): " &lt;&lt; text &lt;&lt; std::endl;
+}
+
+void MySaxParser::on_warning(const xmlpp::ustring&amp; text)
+{
+  std::cout &lt;&lt; "on_warning(): " &lt;&lt; text &lt;&lt; std::endl;
+}
+
+void MySaxParser::on_error(const xmlpp::ustring&amp; text)
+{
+  std::cout &lt;&lt; "on_error(): " &lt;&lt; text &lt;&lt; std::endl;
+}
+
+void MySaxParser::on_fatal_error(const xmlpp::ustring&amp; text)
+{
+  std::cout &lt;&lt; "on_fatal_error(): " &lt;&lt; text &lt;&lt; std::endl;
+}
+
+</pre>
+
+</div>
+    </div>
+<div class="navfooter">
+<hr>
+<table width="100%" summary="Navigation footer">
+<tr>
+<td width="40%" align="left">
+<a accesskey="p" href="chapter-parsers.html">Prev</a> </td>
+<td width="20%" align="center"><a accesskey="u" href="chapter-parsers.html">Up</a></td>
+<td width="40%" align="right"> <a accesskey="n" href="sect-reader-parser.html">Next</a>
+</td>
+</tr>
+<tr>
+<td width="40%" align="left" valign="top">Chapter 2. Parsers </td>
+<td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td>
+<td width="40%" align="right" valign="top"> TextReader Parser</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

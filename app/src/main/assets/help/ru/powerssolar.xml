@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE!! IT WAS GENERATED AUTOMATICALLY! (you must edit files in help_template directory) -->
+<Document style="helpdocument">
+	<p style="htitle">Солнечная электростанция</p>
+	<p style="hp">Солнечная электростанция вырабатывает энергию с помощью солнечных батарей и передаёт её по <a href="powerline">ЛЭП</a>.</p>
+	<p style="hp">Эффективность солнечных батарей возрастает с увеличением технологического уровня.</p>
+	<p style="hp">Без рабочих солнечная электростанция не будет функционировать.</p>
+
+  <p style="hp">Это солнечная электростанция:</p>
+   <img src="images/tiles/powerssolar.png" halign="center"/>
+
+  <p style="hp">а это её иконка:</p>
+   <img src="images/gui/buttonpanel/power/solarpower.png" halign="center"/>
+
+  <p style="hsubtitle">См. ещё:</p>
+	<li><a href="substation">Подстанция</a></li>
+	<li><a href="power">Энергия</a></li>
+	<li><a href="powerline">ЛЭП</a></li>
+	<li><a href="tech-level">Уровень технологического развития</a></li>
+	<li><a href="msb-power">Зоны электроснабжения</a></li>
+	<li><a href="windmill">Ветрогенератор</a></li>
+</Document>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!-- DO NOT CHANGE THIS FILE!! IT WAS GENERATED AUTOMATICALLY! (you must edit files in help_template directory) -->
+<Document style="helpdocument">
+	<p style="htitle">Substations</p>
+	<p style="hp">Substations take power packets from power lines (high-voltage) and distribute the power to adjacent transport (low-voltage). Check the power overlay to see where you need more power. The transformers don't require any labor to function.</p>
+
+  <p style="hp">This is a substation</p>
+   <img src="images/tiles/substation-G.png" halign="center"/>
+
+  <p style="hp">and this is its icon</p>
+   <img src="images/gui/buttonpanel/power/substation.png" halign="center"/>
+
+	<p style="hsubtitle">Formulas</p>
+	<p style="hp">1500 hi-volt =&gt; 3000 lo-volt</p>
+	<p style="hp">If there is not enough high-voltage power, then the formula may be scaled down.</p>
+
+  <p style="hsubtitle">See also:</p>
+	<li><a href="msb-power">Power overlay</a></li>
+	<li><a href="power">Power</a></li>
+	<li><a href="powerline">Power lines</a></li>
+	<li><a href="windmill">Windmills</a></li>
+	<li><a href="powerscoal">Coal fired power station</a></li>
+	<li><a href="powerssolar">Solar power station</a></li>
+</Document>
